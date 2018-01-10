@@ -162,6 +162,46 @@ libft/fast:
 	$(MAKE) -f libft/ft_printf/libftprintf/CMakeFiles/libft.dir/build.make libft/ft_printf/libftprintf/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
 
+#=============================================================================
+# Target rules for targets named classes_lib
+
+# Build rule for target.
+classes_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 classes_lib
+.PHONY : classes_lib
+
+# fast build rule for target.
+classes_lib/fast:
+	$(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/build
+.PHONY : classes_lib/fast
+
+src/draw_line.o: src/draw_line.c.o
+
+.PHONY : src/draw_line.o
+
+# target to build an object file
+src/draw_line.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw_line.c.o
+.PHONY : src/draw_line.c.o
+
+src/draw_line.i: src/draw_line.c.i
+
+.PHONY : src/draw_line.i
+
+# target to preprocess a source file
+src/draw_line.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw_line.c.i
+.PHONY : src/draw_line.c.i
+
+src/draw_line.s: src/draw_line.c.s
+
+.PHONY : src/draw_line.s
+
+# target to generate assembly for a file
+src/draw_line.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw_line.c.s
+.PHONY : src/draw_line.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -201,6 +241,10 @@ help:
 	@echo "... libft.a"
 	@echo "... ft_printf"
 	@echo "... libft"
+	@echo "... classes_lib"
+	@echo "... src/draw_line.o"
+	@echo "... src/draw_line.i"
+	@echo "... src/draw_line.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/mvukolov/Documents/fdf/libft/includes 
+C_INCLUDES = -I/Users/mvukolov/Documents/fdf/libft/includes -I/Users/mvukolov/Documents/fdf/classes_lib 
 

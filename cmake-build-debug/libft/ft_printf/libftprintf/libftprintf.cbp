@@ -5,7 +5,7 @@
 		<Option title="libftprintf"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\libft\;CMake Files\libft\ft_printf\;CMake Files\libft\ft_printf\libftprintf\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\classes_lib\;CMake Files\libft\;CMake Files\libft\ft_printf\;CMake Files\libft\ft_printf\libftprintf\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/mvukolov/Documents/fdf/cmake-build-debug/libft/ft_printf/libftprintf"/>
@@ -262,6 +262,12 @@
 		</Unit>
 		<Unit filename="/Users/mvukolov/Documents/fdf/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/mvukolov/Documents/fdf/classes_lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\classes_lib\"/>
+		</Unit>
+		<Unit filename="/Users/mvukolov/Documents/fdf/classes_lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\classes_lib\"/>
 		</Unit>
 		<Unit filename="/Users/mvukolov/Documents/fdf/libft/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\libft\"/>

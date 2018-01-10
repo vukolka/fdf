@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+../classes_lib/Point.h
+
+../classes_lib/new.h
+stddef.h
+-
+stdarg.h
+-
+
+../classes_lib/string.h
+
 ../libft/includes/ft_printf.h
 stdarg.h
 -
@@ -25,6 +35,10 @@ stdarg.h
 -
 
 /Users/mvukolov/Documents/fdf/src/main.c
-ft_printf.h
+Point.h
 -
+ft_printf.h
+/Users/mvukolov/Documents/fdf/src/ft_printf.h
+new.h
+/Users/mvukolov/Documents/fdf/src/new.h
 
