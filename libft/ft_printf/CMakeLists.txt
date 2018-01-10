@@ -32,3 +32,5 @@ include_directories(ft_printf)
 
 add_library(ft_printf STATIC ${SOURCE_FILES})
 
+target_link_libraries(ft_printf libft)
+
