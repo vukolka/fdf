@@ -28,6 +28,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	}
 	(*newlist).content = malloc(content_size);
 	newcontent = (unsigned char*)(*newlist).content;
+	newlist->next = NULL;
 	if (newcontent != NULL)
 	{
 		while (content_size-- > 0 && content != NULL)

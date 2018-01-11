@@ -1,4 +1,21 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mvukolov/Documents/fdf
+/home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/vukolov/Documents/unit/fdf
+CMake Warning at CMakeLists.txt:13 (find_package):
+  By not providing "Findlibmlx.a.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "libmlx.a",
+  but CMake did not find one.
+
+  Could not find a package configuration file provided by "libmlx.a" with any
+  of the following names:
+
+    libmlx.aConfig.cmake
+    libmlx.a-config.cmake
+
+  Add the installation prefix of "libmlx.a" to CMAKE_PREFIX_PATH or set
+  "libmlx.a_DIR" to a directory containing one of the above files.  If
+  "libmlx.a" provides a separate development package or SDK, be sure it has
+  been installed.
+
+
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/mvukolov/Documents/fdf/cmake-build-debug
+-- Build files have been written to: /home/vukolov/Documents/unit/fdf/cmake-build-debug

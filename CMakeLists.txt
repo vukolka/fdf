@@ -8,7 +8,13 @@ set(SOURCE_FILES
 
 include_directories(libft/includes)
 
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ")
+
+find_package(libmlx.a)
+
 add_subdirectory(libft)
+
+include_directories(libmlx)
 
 include_directories(classes_lib)
 
@@ -16,4 +22,5 @@ add_executable(fdf ${SOURCE_FILES})
 
 add_subdirectory(classes_lib)
 
-target_link_libraries(fdf classes_lib libft.a)
+target_link_libraries(fdf classes_lib libft.a -L/home/vukolov/Documents/unit/fdf/libmlx -lmlx  -lXext -lX11 -lmlx -lm)
+

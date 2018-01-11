@@ -2,7 +2,6 @@
 // Created by Mykola VUKOLOV on 1/10/18.
 //
 
-#include <mlx.h>
 #include "new.h"
 #include "Point.h"
 
@@ -24,7 +23,7 @@ static void		*point_ctor(void *s_self, va_list *ap)
 
 static void		*point_clone(const void *s_self)
 {
-	t_point *self;
+	const t_point *self;
 
 	self = s_self;
 	if (self)

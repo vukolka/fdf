@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
+../classes_lib/MLXConn.h
+
 ../classes_lib/Point.h
+
+../classes_lib/String.h
+
+../classes_lib/classes_lib.h
 
 ../classes_lib/new.h
 stddef.h
 -
 stdarg.h
 -
-
-../classes_lib/string.h
 
 ../libft/includes/ft_printf.h
 stdarg.h
@@ -23,6 +27,20 @@ stdio.h
 -
 libft.h
 ../libft/includes/libft.h
+
+../libft/includes/get_next_line.h
+sys/types.h
+-
+sys/uio.h
+-
+fcntl.h
+-
+unistd.h
+-
+stdlib.h
+-
+string.h
+-
 
 ../libft/includes/libft.h
 string.h
@@ -34,11 +52,31 @@ unistd.h
 stdarg.h
 -
 
-/Users/mvukolov/Documents/fdf/src/main.c
+../libmlx/mlx.h
+
+/home/vukolov/Documents/unit/fdf/src/draw_line.c
+wchar.h
+-
+
+/home/vukolov/Documents/unit/fdf/src/main.c
 Point.h
 -
+String.h
+-
+classes_lib.h
+-
+MLXConn.h
+-
+mlx.h
+-
+fcntl.h
+-
+get_next_line.h
+-
 ft_printf.h
-/Users/mvukolov/Documents/fdf/src/ft_printf.h
+/home/vukolov/Documents/unit/fdf/src/ft_printf.h
 new.h
-/Users/mvukolov/Documents/fdf/src/new.h
+/home/vukolov/Documents/unit/fdf/src/new.h
+math.h
+-
 
