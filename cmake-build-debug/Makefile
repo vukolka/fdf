@@ -175,32 +175,86 @@ classes_lib/fast:
 	$(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/build
 .PHONY : classes_lib/fast
 
-src/draw_line.o: src/draw_line.c.o
+src/draw.o: src/draw.c.o
 
-.PHONY : src/draw_line.o
+.PHONY : src/draw.o
 
 # target to build an object file
-src/draw_line.c.o:
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw_line.c.o
-.PHONY : src/draw_line.c.o
+src/draw.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw.c.o
+.PHONY : src/draw.c.o
 
-src/draw_line.i: src/draw_line.c.i
+src/draw.i: src/draw.c.i
 
-.PHONY : src/draw_line.i
+.PHONY : src/draw.i
 
 # target to preprocess a source file
-src/draw_line.c.i:
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw_line.c.i
-.PHONY : src/draw_line.c.i
+src/draw.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw.c.i
+.PHONY : src/draw.c.i
 
-src/draw_line.s: src/draw_line.c.s
+src/draw.s: src/draw.c.s
 
-.PHONY : src/draw_line.s
+.PHONY : src/draw.s
 
 # target to generate assembly for a file
-src/draw_line.c.s:
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw_line.c.s
-.PHONY : src/draw_line.c.s
+src/draw.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw.c.s
+.PHONY : src/draw.c.s
+
+src/key_events.o: src/key_events.c.o
+
+.PHONY : src/key_events.o
+
+# target to build an object file
+src/key_events.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/key_events.c.o
+.PHONY : src/key_events.c.o
+
+src/key_events.i: src/key_events.c.i
+
+.PHONY : src/key_events.i
+
+# target to preprocess a source file
+src/key_events.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/key_events.c.i
+.PHONY : src/key_events.c.i
+
+src/key_events.s: src/key_events.c.s
+
+.PHONY : src/key_events.s
+
+# target to generate assembly for a file
+src/key_events.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/key_events.c.s
+.PHONY : src/key_events.c.s
+
+src/list_helpers.o: src/list_helpers.c.o
+
+.PHONY : src/list_helpers.o
+
+# target to build an object file
+src/list_helpers.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/list_helpers.c.o
+.PHONY : src/list_helpers.c.o
+
+src/list_helpers.i: src/list_helpers.c.i
+
+.PHONY : src/list_helpers.i
+
+# target to preprocess a source file
+src/list_helpers.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/list_helpers.c.i
+.PHONY : src/list_helpers.c.i
+
+src/list_helpers.s: src/list_helpers.c.s
+
+.PHONY : src/list_helpers.s
+
+# target to generate assembly for a file
+src/list_helpers.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/list_helpers.c.s
+.PHONY : src/list_helpers.c.s
 
 src/main.o: src/main.c.o
 
@@ -229,6 +283,60 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/math.o: src/math.c.o
+
+.PHONY : src/math.o
+
+# target to build an object file
+src/math.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/math.c.o
+.PHONY : src/math.c.o
+
+src/math.i: src/math.c.i
+
+.PHONY : src/math.i
+
+# target to preprocess a source file
+src/math.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/math.c.i
+.PHONY : src/math.c.i
+
+src/math.s: src/math.c.s
+
+.PHONY : src/math.s
+
+# target to generate assembly for a file
+src/math.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/math.c.s
+.PHONY : src/math.c.s
+
+src/parsing.o: src/parsing.c.o
+
+.PHONY : src/parsing.o
+
+# target to build an object file
+src/parsing.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/parsing.c.o
+.PHONY : src/parsing.c.o
+
+src/parsing.i: src/parsing.c.i
+
+.PHONY : src/parsing.i
+
+# target to preprocess a source file
+src/parsing.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/parsing.c.i
+.PHONY : src/parsing.c.i
+
+src/parsing.s: src/parsing.c.s
+
+.PHONY : src/parsing.s
+
+# target to generate assembly for a file
+src/parsing.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/parsing.c.s
+.PHONY : src/parsing.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,12 +350,24 @@ help:
 	@echo "... ft_printf"
 	@echo "... libft"
 	@echo "... classes_lib"
-	@echo "... src/draw_line.o"
-	@echo "... src/draw_line.i"
-	@echo "... src/draw_line.s"
+	@echo "... src/draw.o"
+	@echo "... src/draw.i"
+	@echo "... src/draw.s"
+	@echo "... src/key_events.o"
+	@echo "... src/key_events.i"
+	@echo "... src/key_events.s"
+	@echo "... src/list_helpers.o"
+	@echo "... src/list_helpers.i"
+	@echo "... src/list_helpers.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/math.o"
+	@echo "... src/math.i"
+	@echo "... src/math.s"
+	@echo "... src/parsing.o"
+	@echo "... src/parsing.i"
+	@echo "... src/parsing.s"
 .PHONY : help
 
 

@@ -4,8 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/vukolov/Documents/unit/fdf/src/draw_line.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/draw_line.c.o"
+  "/home/vukolov/Documents/unit/fdf/src/draw.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/draw.c.o"
+  "/home/vukolov/Documents/unit/fdf/src/key_events.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/key_events.c.o"
+  "/home/vukolov/Documents/unit/fdf/src/list_helpers.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/list_helpers.c.o"
   "/home/vukolov/Documents/unit/fdf/src/main.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/main.c.o"
+  "/home/vukolov/Documents/unit/fdf/src/math.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/math.c.o"
+  "/home/vukolov/Documents/unit/fdf/src/parsing.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/parsing.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

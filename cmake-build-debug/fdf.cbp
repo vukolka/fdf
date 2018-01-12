@@ -292,6 +292,9 @@
 		<Unit filename="/home/vukolov/Documents/unit/fdf/classes_lib/new.h">
 			<Option target="classes_lib"/>
 		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/fdf.h">
+			<Option target="fdf"/>
+		</Unit>
 		<Unit filename="/home/vukolov/Documents/unit/fdf/libft/ft_printf/ft_printf/apply_flags.c">
 			<Option target="ft_printf"/>
 		</Unit>
@@ -553,10 +556,22 @@
 		<Unit filename="/home/vukolov/Documents/unit/fdf/libft/get_next_line/get_next_line.h">
 			<Option target="libft.a"/>
 		</Unit>
-		<Unit filename="/home/vukolov/Documents/unit/fdf/src/draw_line.c">
+		<Unit filename="/home/vukolov/Documents/unit/fdf/src/draw.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/src/key_events.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/src/list_helpers.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/home/vukolov/Documents/unit/fdf/src/main.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/src/math.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/src/parsing.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/home/vukolov/Documents/unit/fdf/CMakeLists.txt">

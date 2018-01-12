@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fdf.dir/src/main.c.o"
-  "CMakeFiles/fdf.dir/src/draw_line.c.o"
+  "CMakeFiles/fdf.dir/src/key_events.c.o"
+  "CMakeFiles/fdf.dir/src/draw.c.o"
+  "CMakeFiles/fdf.dir/src/parsing.c.o"
+  "CMakeFiles/fdf.dir/src/math.c.o"
+  "CMakeFiles/fdf.dir/src/list_helpers.c.o"
   "fdf.pdb"
   "fdf"
 )
