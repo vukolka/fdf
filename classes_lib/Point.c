@@ -1,7 +1,3 @@
-//
-// Created by Mykola VUKOLOV on 1/10/18.
-//
-
 #include "new.h"
 #include "Point.h"
 

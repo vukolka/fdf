@@ -8,12 +8,12 @@
 #include <mlx.h>
 #include "../fdf.h"
 
-void	move_right(t_list *map)
+void	move_right(void **map)
 {
-	for_each_lst(map, modify_vector, 1, 1, 0);
+	for_each_lst(map, modify_vector, 10, 10, 0);
 }
 
-void	move_left(t_list *map)
+void	move_left(void **map)
 {
 
 }
@@ -23,7 +23,7 @@ void	close_win()
 	exit (0);
 }
 
-void	apply_hooks(void **s_mlx, t_list **map)
+void	apply_hooks(void **s_mlx, void **map)
 {
 	t_mlx_class 	*mlx;
 	unsigned long	*param;
