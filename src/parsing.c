@@ -3,34 +3,36 @@
 #include <get_next_line.h>
 #include <new.h>
 #include <Point.h>
+#include <ft_printf.h>
 
-void	**get_2d_array(t_list *map, int rows, int cols)
+void	***get_2d_array(t_list *map, int rows, int cols)
 {
-	unsigned long	**array;
+	t_point			***array;
 	int				i;
 	int				j;
 
 	j = 0;
 	i = 0;
-	array = malloc(rows * sizeof(t_list *));
+	array = malloc((rows + 1) * sizeof(t_point ***));
 	while (i < rows)
 	{
-		array[i] = malloc(sizeof(t_list*) * cols);
+		array[i] = malloc(sizeof(t_point**) * (cols + 1));
 		while (j < cols)
 		{
-			array[i][j] = (unsigned int)map->content;
+			array[i][j] = map->content;
+			ft_printf("i = %d, j = %d, adr = %#lx\n",i, j, array[i][j]);
 			j++;
 			map = map->next;
 		}
-		array[i][j] = 0;
+		array[i][j] = NULL;
 		j = 0;
 		i++;
 	}
-	array[i] = 0;
-	return ((void **)array);
+	array[i] = NULL;
+	return ((void ***)array);
 }
 
-void 	**parce_map(t_list **map, char *name)
+void	***parce_map(t_list **map, char *name)
 {
 	int		fd;
 	int		i;

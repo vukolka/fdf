@@ -4,40 +4,48 @@
 CMakeFiles/fdf.dir/src/draw.c.o
  ../classes_lib/MLXConn.h
  ../classes_lib/Point.h
- ../classes_lib/string.h
  ../libft/includes/ft_printf.h
  ../libft/includes/libft.h
- /Users/mvukolov/Documents/fdf/fdf.h
- /Users/mvukolov/Documents/fdf/src/draw.c
+ ../libmlx/mlx.h
+ /home/vukolov/Documents/unit/fdf/fdf.h
+ /home/vukolov/Documents/unit/fdf/src/draw.c
 CMakeFiles/fdf.dir/src/key_events.c.o
  ../classes_lib/MLXConn.h
- ../classes_lib/string.h
  ../libft/includes/libft.h
- /Users/mvukolov/Documents/fdf/fdf.h
- /Users/mvukolov/Documents/fdf/src/key_events.c
+ ../libmlx/mlx.h
+ /home/vukolov/Documents/unit/fdf/fdf.h
+ /home/vukolov/Documents/unit/fdf/src/key_events.c
 CMakeFiles/fdf.dir/src/list_helpers.c.o
- ../classes_lib/string.h
  ../libft/includes/libft.h
- /Users/mvukolov/Documents/fdf/src/list_helpers.c
+ /home/vukolov/Documents/unit/fdf/src/list_helpers.c
 CMakeFiles/fdf.dir/src/main.c.o
  ../classes_lib/MLXConn.h
  ../classes_lib/Point.h
  ../classes_lib/String.h
  ../classes_lib/classes_lib.h
  ../classes_lib/new.h
- ../classes_lib/string.h
  ../libft/includes/ft_printf.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
- /Users/mvukolov/Documents/fdf/fdf.h
- /Users/mvukolov/Documents/fdf/src/main.c
+ ../libmlx/mlx.h
+ /home/vukolov/Documents/unit/fdf/fdf.h
+ /home/vukolov/Documents/unit/fdf/src/main.c
 CMakeFiles/fdf.dir/src/math.c.o
  ../classes_lib/Point.h
- /Users/mvukolov/Documents/fdf/src/math.c
+ /home/vukolov/Documents/unit/fdf/src/math.c
 CMakeFiles/fdf.dir/src/parsing.c.o
  ../classes_lib/Point.h
  ../classes_lib/new.h
- ../classes_lib/string.h
+ ../libft/includes/ft_printf.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
- /Users/mvukolov/Documents/fdf/src/parsing.c
+ /home/vukolov/Documents/unit/fdf/src/parsing.c
+CMakeFiles/fdf.dir/src/test_main.c.o
+ ../classes_lib/MLXConn.h
+ ../classes_lib/Point.h
+ ../classes_lib/classes_lib.h
+ ../classes_lib/new.h
+ ../libft/includes/libft.h
+ ../libmlx/mlx.h
+ /home/vukolov/Documents/unit/fdf/fdf.h
+ /home/vukolov/Documents/unit/fdf/src/test_main.c

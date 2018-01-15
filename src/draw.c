@@ -29,8 +29,8 @@ void 	draw_line(void *s_mlx, void *v1, void *v2)
 	int		x;
 	double	k;
 
-	int *p1 = apply_rotation(v1, 0.4, 0.4, 0);
-	int *p2 = apply_rotation(v2, 0.4, 0.4, 0);
+	int *p1 = apply_rotation(v1, 0.0, 0.0, 0);
+	int *p2 = apply_rotation(v2, 0.0, 0.0, 0);
 	dx = p2[0] - p1[0];
 	dy = p2[1] - p1[1];
 	c = 0;
@@ -58,21 +58,34 @@ void 	draw_line(void *s_mlx, void *v1, void *v2)
 
 void	draw_poligons(void *mlx, void *s_map)
 {
-	unsigned long	**map;
+	t_point			***map;
 	int				i;
 	int				j;
 
-	map = (unsigned long **)s_map;
+	map = (t_point ***)s_map;
 	i = 0;
 	j = 0;
 	while (map[i])
 	{
 		while (map[i][j + 1])
 		{
+			ft_printf("i = %d, j = %d, adr = %#lx\n",i, j, map[i][j]);
 			draw_line(mlx, map[i][j], map[i][j + 1]);
 			j++;
 		}
 		j = 0;
 		i++;
+	}
+	i = 0;
+	j = 0;
+	while (map[i][j])
+	{
+		while (map[i + 1])
+		{
+			draw_line(mlx, map[i][j], map[i + 1][j]);
+			i++;
+		}
+		i = 0;
+		j++;
 	}
 }

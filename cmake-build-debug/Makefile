@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mvukolov/Documents/fdf
+CMAKE_SOURCE_DIR = /home/vukolov/Documents/unit/fdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mvukolov/Documents/fdf/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vukolov/Documents/unit/fdf/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/mvukolov/Documents/fdf/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles /Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles /home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -337,6 +337,33 @@ src/parsing.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/parsing.c.s
 .PHONY : src/parsing.c.s
 
+src/test_main.o: src/test_main.c.o
+
+.PHONY : src/test_main.o
+
+# target to build an object file
+src/test_main.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/test_main.c.o
+.PHONY : src/test_main.c.o
+
+src/test_main.i: src/test_main.c.i
+
+.PHONY : src/test_main.i
+
+# target to preprocess a source file
+src/test_main.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/test_main.c.i
+.PHONY : src/test_main.c.i
+
+src/test_main.s: src/test_main.c.s
+
+.PHONY : src/test_main.s
+
+# target to generate assembly for a file
+src/test_main.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/test_main.c.s
+.PHONY : src/test_main.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -368,6 +395,9 @@ help:
 	@echo "... src/parsing.o"
 	@echo "... src/parsing.i"
 	@echo "... src/parsing.s"
+	@echo "... src/test_main.o"
+	@echo "... src/test_main.i"
+	@echo "... src/test_main.s"
 .PHONY : help
 
 

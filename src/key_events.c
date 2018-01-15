@@ -10,7 +10,7 @@
 
 void	move_right(void **map)
 {
-	for_each_lst(map, modify_vector, 10, 10, 0);
+	for_each_lst((t_list*)map, modify_vector, 10, 10, 0);
 }
 
 void	move_left(void **map)
@@ -30,7 +30,7 @@ void	apply_hooks(void **s_mlx, void **map)
 
 	param = malloc(sizeof(unsigned long*) * 2);
 	mlx = *s_mlx;
-	param[0] = *(unsigned long*)map;
+	param[0] = (unsigned long)map;
 	param[1] = *(unsigned long*)s_mlx;
 	mlx_key_hook(mlx->winx, render_screen, param);
 }

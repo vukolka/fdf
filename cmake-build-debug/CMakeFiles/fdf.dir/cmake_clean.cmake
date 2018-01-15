@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fdf.dir/src/parsing.c.o"
   "CMakeFiles/fdf.dir/src/math.c.o"
   "CMakeFiles/fdf.dir/src/list_helpers.c.o"
+  "CMakeFiles/fdf.dir/src/test_main.c.o"
   "fdf.pdb"
   "fdf"
 )
