@@ -2,58 +2,116 @@
 #include <libft.h>
 #include <Point.h>
 #include <mlx.h>
+#include <math.h>
 #include <MLXConn.h>
 #include <ft_printf.h>
 #include "../fdf.h"
 
-void	put_point(void *s_vector, void *s_mlx)
+void	put_point(void *s_mlx, int x, int y, int color)
 {
-	t_point *vector;
 	t_mlx_class *mlx;
-	int 	*res;
 
 	mlx = s_mlx;
-	vector = s_vector;
-	res = apply_rotation(s_vector, 0.6, 0.5, 0);
-	mlx_pixel_put(mlx->conn, mlx->winx, res[0], res[1], 255);
-	free(res);
+	mlx_pixel_put(mlx->conn, mlx->winx, x, y, color);
+}
+
+int 	get_x(void *s_vector)
+{
+	return (((t_point*)s_vector)->x);
+}
+
+int 	get_y(void *s_vector)
+{
+	return (((t_point*)s_vector)->y);
+}
+
+int 	get_z(void *s_vector)
+{
+	return (((t_point*)s_vector)->z);
+}
+
+draw_line_high(void *mlx, int x0, int y0, int x1, int y1)
+{
+	int dx = x1 - x0;
+	int dy = y1 - y0;
+	int xi = 1;
+	int err;
+	int y;
+	int i;
+
+	if (dx < 0)
+	{
+		xi = -1;
+		dy = -dy;
+	}
+	err = 2 * dy - dx;
+	y = y0;
+	i = x0;
+	while (i < x1)
+	{
+        put_point(mlx ,i, y, 0xffffff);
+		if (err > 0)
+		{
+			y = y + xi;
+			y = y + xi;
+			err -= 2*dx;
+		}
+		err = err + 2*dy;
+		i++;
+	}
+}
+
+draw_line_low(void *s_mlx, int x0, int y0, int x1, int y1)
+{
+	int dx = x1 - x0;
+	int dy = y1 - y0;
+	int yi = 1;
+	int err;
+	int y;
+	int i;
+
+	if (dy < 0)
+	{
+		yi = -1;
+		dy = -dy;
+	}
+	err = 2 * dy - dx;
+	y = y0;
+	i = x0;
+	while (i < x1)
+	{
+        put_point(s_mlx, i, y, 0xffffff);
+		if (err > 0)
+		{
+			y = y + y1;
+			err -= 2*dx;
+		}
+		err = err + 2*dy;
+		i++;
+	}
 }
 
 void 	draw_line(void *s_mlx, void *v1, void *v2)
 {
-	t_mlx_class *mlx = s_mlx;
-	int		y;
-	int		dx;
-	int 	dy;
-	double	c;
-	int		x;
-	double	k;
+	int *xy0;
+	int *xy1;
 
-	int *p1 = apply_rotation(v1, 0.0, 0.0, 0);
-	int *p2 = apply_rotation(v2, 0.0, 0.0, 0);
-	dx = p2[0] - p1[0];
-	dy = p2[1] - p1[1];
-	c = 0;
-	if (dx == 0)
-		k = 0;
-	else
-		k = dy / dx;
-	y = p1[1];
-	x = p1[0];
-	while (x != p2[0])
-	{
-		mlx_pixel_put(mlx->conn, mlx->winx, x, y, 255);
-		c = c + k;
-		if (abs(c) >= 0.5)
-		{
-			y = y + 1;
-			c = c - 1;
-		}
-		if (x > p2[0])
-			x--;
-		else
-			x++;
-	}
+	xy0 = apply_rotation(v1, 0, 0, 0);
+	xy1 = apply_rotation(v2, 0, 0, 0);
+    if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
+    {
+        if (xy0[0] > xy1[0])
+            draw_line_low(s_mlx, xy1[0], xy1[1], xy0[0], xy0[1]);
+        else
+            draw_line_low(s_mlx, xy0[0], xy0[1], xy1[0], xy1[1]);
+    }
+    else
+    {
+        if (xy0[1] > xy1[1])
+            draw_line_high(s_mlx, xy1[0], xy1[1], xy0[0], xy0[1]);
+        else
+            draw_line_high(s_mlx, xy0[0], xy0[1], xy1[0], xy1[1]);
+    }
 }
 
 void	draw_poligons(void *mlx, void *s_map)
@@ -69,7 +127,6 @@ void	draw_poligons(void *mlx, void *s_map)
 	{
 		while (map[i][j + 1])
 		{
-			ft_printf("i = %d, j = %d, adr = %#lx\n",i, j, map[i][j]);
 			draw_line(mlx, map[i][j], map[i][j + 1]);
 			j++;
 		}

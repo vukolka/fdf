@@ -20,6 +20,8 @@ stddef.h
 stdarg.h
 -
 
+../classes_lib/string.h
+
 ../libft/includes/ft_printf.h
 stdarg.h
 -
@@ -52,9 +54,7 @@ unistd.h
 stdarg.h
 -
 
-../libmlx/mlx.h
-
-/home/vukolov/Documents/unit/fdf/fdf.h
+/Users/mvukolov/Documents/fdf/fdf.h
 stdarg.h
 -
 libft.h
@@ -62,7 +62,7 @@ libft.h
 mlx.h
 -
 
-/home/vukolov/Documents/unit/fdf/src/draw.c
+/Users/mvukolov/Documents/fdf/src/draw.c
 wchar.h
 -
 libft.h
@@ -71,14 +71,16 @@ Point.h
 -
 mlx.h
 -
+math.h
+-
 MLXConn.h
 -
 ft_printf.h
 -
 ../fdf.h
-/home/vukolov/Documents/unit/fdf/fdf.h
+/Users/mvukolov/Documents/fdf/fdf.h
 
-/home/vukolov/Documents/unit/fdf/src/key_events.c
+/Users/mvukolov/Documents/fdf/src/key_events.c
 stdlib.h
 -
 libft.h
@@ -88,13 +90,15 @@ MLXConn.h
 mlx.h
 -
 ../fdf.h
-/home/vukolov/Documents/unit/fdf/fdf.h
+/Users/mvukolov/Documents/fdf/fdf.h
 
-/home/vukolov/Documents/unit/fdf/src/list_helpers.c
+/Users/mvukolov/Documents/fdf/src/list_helpers.c
 libft.h
 -
+ft_printf.h
+-
 
-/home/vukolov/Documents/unit/fdf/src/main.c
+/Users/mvukolov/Documents/fdf/src/main.c
 Point.h
 -
 String.h
@@ -110,23 +114,27 @@ fcntl.h
 get_next_line.h
 -
 ft_printf.h
-/home/vukolov/Documents/unit/fdf/src/ft_printf.h
+/Users/mvukolov/Documents/fdf/src/ft_printf.h
 new.h
-/home/vukolov/Documents/unit/fdf/src/new.h
+/Users/mvukolov/Documents/fdf/src/new.h
 ../fdf.h
-/home/vukolov/Documents/unit/fdf/fdf.h
+/Users/mvukolov/Documents/fdf/fdf.h
 math.h
 -
 
-/home/vukolov/Documents/unit/fdf/src/math.c
+/Users/mvukolov/Documents/fdf/src/math.c
 Point.h
 -
 stdlib.h
 -
 math.h
 -
+ft_printf.h
+-
+new.h
+-
 
-/home/vukolov/Documents/unit/fdf/src/parsing.c
+/Users/mvukolov/Documents/fdf/src/parsing.c
 libft.h
 -
 fcntl.h
@@ -140,7 +148,7 @@ Point.h
 ft_printf.h
 -
 
-/home/vukolov/Documents/unit/fdf/src/test_main.c
+/Users/mvukolov/Documents/fdf/src/test_main.c
 new.h
 -
 MLXConn.h
@@ -152,5 +160,5 @@ Point.h
 classes_lib.h
 -
 ../fdf.h
-/home/vukolov/Documents/unit/fdf/fdf.h
+/Users/mvukolov/Documents/fdf/fdf.h
 

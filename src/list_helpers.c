@@ -1,4 +1,5 @@
 #include <libft.h>
+#include <ft_printf.h>
 
 void	for_each_lst(t_list *lst, void (*f)(void *, int , int , int), ...)
 {

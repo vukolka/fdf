@@ -1,6 +1,8 @@
 #include <Point.h>
 #include <stdlib.h>
 #include <math.h>
+#include <ft_printf.h>
+#include <new.h>
 
 int		*apply_rotation(void *s_vector, double rx, double ry, double rz)
 {
@@ -8,8 +10,8 @@ int		*apply_rotation(void *s_vector, double rx, double ry, double rz)
 	int x;
 	int y;
 	int z;
-
 	int *res;
+
 	res = malloc(8);
 	vector = s_vector;
 	x = vector->x;
