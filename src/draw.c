@@ -39,25 +39,24 @@ draw_line_high(void *mlx, int x0, int y0, int x1, int y1)
 	int y;
 	int i;
 
-	if (dx < 0)
+	if (dy < 0)
 	{
 		xi = -1;
-		dy = -dy;
+		dx = -dx;
 	}
-	err = 2 * dy - dx;
+	err = 2 * dx - dy;
 	y = y0;
 	i = x0;
-	while (i < x1)
+	while (y < y1)
 	{
         put_point(mlx ,i, y, 0xffffff);
 		if (err > 0)
 		{
-			y = y + xi;
-			y = y + xi;
-			err -= 2*dx;
+			i += xi;
+			err -= 2*dy;
 		}
-		err = err + 2*dy;
-		i++;
+		err = err + 2*dx;
+		y++;
 	}
 }
 
@@ -83,7 +82,7 @@ draw_line_low(void *s_mlx, int x0, int y0, int x1, int y1)
         put_point(s_mlx, i, y, 0xffffff);
 		if (err > 0)
 		{
-			y = y + y1;
+			y += yi;
 			err -= 2*dx;
 		}
 		err = err + 2*dy;
@@ -96,8 +95,8 @@ void 	draw_line(void *s_mlx, void *v1, void *v2)
 	int *xy0;
 	int *xy1;
 
-	xy0 = apply_rotation(v1, 0, 0, 0);
-	xy1 = apply_rotation(v2, 0, 0, 0);
+	xy0 = apply_rotation(v1, 1, 0, 0);
+	xy1 = apply_rotation(v2, 1, 0, 0);
     if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
     {
         if (xy0[0] > xy1[0])
