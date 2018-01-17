@@ -89,6 +89,8 @@ MLXConn.h
 -
 mlx.h
 -
+Point.h
+-
 ../fdf.h
 /Users/mvukolov/Documents/fdf/fdf.h
 
@@ -158,6 +160,8 @@ mlx.h
 Point.h
 -
 classes_lib.h
+-
+ft_printf.h
 -
 ../fdf.h
 /Users/mvukolov/Documents/fdf/fdf.h

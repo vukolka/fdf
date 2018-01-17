@@ -10,6 +10,7 @@ CMakeFiles/fdf.dir/src/draw.c.o: ../fdf.h
 CMakeFiles/fdf.dir/src/draw.c.o: ../src/draw.c
 
 CMakeFiles/fdf.dir/src/key_events.c.o: ../classes_lib/MLXConn.h
+CMakeFiles/fdf.dir/src/key_events.c.o: ../classes_lib/Point.h
 CMakeFiles/fdf.dir/src/key_events.c.o: ../classes_lib/string.h
 CMakeFiles/fdf.dir/src/key_events.c.o: ../libft/includes/libft.h
 CMakeFiles/fdf.dir/src/key_events.c.o: ../fdf.h
@@ -52,6 +53,7 @@ CMakeFiles/fdf.dir/src/test_main.c.o: ../classes_lib/Point.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../classes_lib/classes_lib.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../classes_lib/new.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../classes_lib/string.h
+CMakeFiles/fdf.dir/src/test_main.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../libft/includes/libft.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../fdf.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../src/test_main.c

@@ -48,8 +48,6 @@ char		*ft_itoa_base(unsigned long long int n, int base)
 	char				*ret;
 	int					i;
 
-	if (n == -0)
-		return (ft_strdup("0"));
 	if (!(ret = ft_strnew(str_len(n, base))))
 		return (NULL);
 	i = str_len(n, base);

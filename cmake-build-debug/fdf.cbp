@@ -569,10 +569,13 @@
 		<Unit filename="/Users/mvukolov/Documents/fdf/src/draw.c">
 			<Option target="fdf"/>
 		</Unit>
-		<Unit filename="/Users/mvukolov/Documents/fdf/src/key_events.c">
+		<Unit filename="/Users/mvukolov/Documents/fdf/src/events.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/mvukolov/Documents/fdf/src/list_helpers.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/mvukolov/Documents/fdf/src/loop.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/mvukolov/Documents/fdf/src/main.c">
@@ -582,6 +585,9 @@
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/mvukolov/Documents/fdf/src/parsing.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/Users/mvukolov/Documents/fdf/src/rendering.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/Users/mvukolov/Documents/fdf/src/test_main.c">

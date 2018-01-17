@@ -15,21 +15,6 @@ void	put_point(void *s_mlx, int x, int y, int color)
 	mlx_pixel_put(mlx->conn, mlx->winx, x, y, color);
 }
 
-int 	get_x(void *s_vector)
-{
-	return (((t_point*)s_vector)->x);
-}
-
-int 	get_y(void *s_vector)
-{
-	return (((t_point*)s_vector)->y);
-}
-
-int 	get_z(void *s_vector)
-{
-	return (((t_point*)s_vector)->z);
-}
-
 draw_line_high(void *mlx, int x0, int y0, int x1, int y1)
 {
 	int dx = x1 - x0;
@@ -39,7 +24,7 @@ draw_line_high(void *mlx, int x0, int y0, int x1, int y1)
 	int y;
 	int i;
 
-	if (dy < 0)
+	if (dx < 0)
 	{
 		xi = -1;
 		dx = -dx;
@@ -95,8 +80,8 @@ void 	draw_line(void *s_mlx, void *v1, void *v2)
 	int *xy0;
 	int *xy1;
 
-	xy0 = apply_rotation(v1, 1, 0, 0);
-	xy1 = apply_rotation(v2, 1, 0, 0);
+	xy0 = apply_rotation(v1, -0.2, -0.3, -0.3);
+	xy1 = apply_rotation(v2, -0.2, -0.3, -0.3);
     if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
     {
         if (xy0[0] > xy1[0])

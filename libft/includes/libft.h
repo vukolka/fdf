@@ -19,6 +19,12 @@
 # include <unistd.h>
 # include <stdarg.h>
 
+typedef struct			s_dictionary
+{
+	void 				*data;
+	int 				key;
+}						t_dictionary;
+
 typedef	struct			s_list
 {
 	void				*content;

@@ -5,11 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/mvukolov/Documents/fdf/src/draw.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/draw.c.o"
-  "/Users/mvukolov/Documents/fdf/src/key_events.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/key_events.c.o"
+  "/Users/mvukolov/Documents/fdf/src/events.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/events.c.o"
   "/Users/mvukolov/Documents/fdf/src/list_helpers.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/list_helpers.c.o"
+  "/Users/mvukolov/Documents/fdf/src/loop.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/loop.c.o"
   "/Users/mvukolov/Documents/fdf/src/main.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/main.c.o"
   "/Users/mvukolov/Documents/fdf/src/math.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/math.c.o"
   "/Users/mvukolov/Documents/fdf/src/parsing.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/parsing.c.o"
+  "/Users/mvukolov/Documents/fdf/src/rendering.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/rendering.c.o"
   "/Users/mvukolov/Documents/fdf/src/test_main.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/test_main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

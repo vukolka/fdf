@@ -202,32 +202,32 @@ src/draw.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/draw.c.s
 .PHONY : src/draw.c.s
 
-src/key_events.o: src/key_events.c.o
+src/events.o: src/events.c.o
 
-.PHONY : src/key_events.o
+.PHONY : src/events.o
 
 # target to build an object file
-src/key_events.c.o:
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/key_events.c.o
-.PHONY : src/key_events.c.o
+src/events.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/events.c.o
+.PHONY : src/events.c.o
 
-src/key_events.i: src/key_events.c.i
+src/events.i: src/events.c.i
 
-.PHONY : src/key_events.i
+.PHONY : src/events.i
 
 # target to preprocess a source file
-src/key_events.c.i:
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/key_events.c.i
-.PHONY : src/key_events.c.i
+src/events.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/events.c.i
+.PHONY : src/events.c.i
 
-src/key_events.s: src/key_events.c.s
+src/events.s: src/events.c.s
 
-.PHONY : src/key_events.s
+.PHONY : src/events.s
 
 # target to generate assembly for a file
-src/key_events.c.s:
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/key_events.c.s
-.PHONY : src/key_events.c.s
+src/events.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/events.c.s
+.PHONY : src/events.c.s
 
 src/list_helpers.o: src/list_helpers.c.o
 
@@ -255,6 +255,33 @@ src/list_helpers.s: src/list_helpers.c.s
 src/list_helpers.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/list_helpers.c.s
 .PHONY : src/list_helpers.c.s
+
+src/loop.o: src/loop.c.o
+
+.PHONY : src/loop.o
+
+# target to build an object file
+src/loop.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/loop.c.o
+.PHONY : src/loop.c.o
+
+src/loop.i: src/loop.c.i
+
+.PHONY : src/loop.i
+
+# target to preprocess a source file
+src/loop.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/loop.c.i
+.PHONY : src/loop.c.i
+
+src/loop.s: src/loop.c.s
+
+.PHONY : src/loop.s
+
+# target to generate assembly for a file
+src/loop.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/loop.c.s
+.PHONY : src/loop.c.s
 
 src/main.o: src/main.c.o
 
@@ -337,6 +364,33 @@ src/parsing.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/parsing.c.s
 .PHONY : src/parsing.c.s
 
+src/rendering.o: src/rendering.c.o
+
+.PHONY : src/rendering.o
+
+# target to build an object file
+src/rendering.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/rendering.c.o
+.PHONY : src/rendering.c.o
+
+src/rendering.i: src/rendering.c.i
+
+.PHONY : src/rendering.i
+
+# target to preprocess a source file
+src/rendering.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/rendering.c.i
+.PHONY : src/rendering.c.i
+
+src/rendering.s: src/rendering.c.s
+
+.PHONY : src/rendering.s
+
+# target to generate assembly for a file
+src/rendering.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/rendering.c.s
+.PHONY : src/rendering.c.s
+
 src/test_main.o: src/test_main.c.o
 
 .PHONY : src/test_main.o
@@ -380,12 +434,15 @@ help:
 	@echo "... src/draw.o"
 	@echo "... src/draw.i"
 	@echo "... src/draw.s"
-	@echo "... src/key_events.o"
-	@echo "... src/key_events.i"
-	@echo "... src/key_events.s"
+	@echo "... src/events.o"
+	@echo "... src/events.i"
+	@echo "... src/events.s"
 	@echo "... src/list_helpers.o"
 	@echo "... src/list_helpers.i"
 	@echo "... src/list_helpers.s"
+	@echo "... src/loop.o"
+	@echo "... src/loop.i"
+	@echo "... src/loop.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -395,6 +452,9 @@ help:
 	@echo "... src/parsing.o"
 	@echo "... src/parsing.i"
 	@echo "... src/parsing.s"
+	@echo "... src/rendering.o"
+	@echo "... src/rendering.i"
+	@echo "... src/rendering.s"
 	@echo "... src/test_main.o"
 	@echo "... src/test_main.i"
 	@echo "... src/test_main.s"

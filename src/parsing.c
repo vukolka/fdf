@@ -5,7 +5,7 @@
 #include <Point.h>
 #include <ft_printf.h>
 
-void	***get_2d_array(t_list *map, int rows, int cols)
+void	**get_2d_array(t_list *map, int rows, int cols)
 {
 	t_point			***array;
 	int				i;
@@ -20,7 +20,6 @@ void	***get_2d_array(t_list *map, int rows, int cols)
 		while (j < cols)
 		{
 			array[i][j] = map->content;
-			ft_printf("i = %d, j = %d, adr = %#lx\n",i, j, array[i][j]);
 			j++;
 			map = map->next;
 		}
@@ -29,10 +28,10 @@ void	***get_2d_array(t_list *map, int rows, int cols)
 		i++;
 	}
 	array[i] = NULL;
-	return ((void ***)array);
+	return ((void **)array);
 }
 
-void	***parce_map(t_list **map, char *name)
+void	**parce_map(t_list **map, char *name)
 {
 	int		fd;
 	int		i;
@@ -51,7 +50,7 @@ void	***parce_map(t_list **map, char *name)
 		{
 			if (ft_isdigit(line[z]))
 			{
-				ft_lstadd(map, ft_lstnew(new(point, j * 30 + 50, i * 30 + 50, (ft_atoi(line + z)) * 12), sizeof(t_point)));
+				ft_lstadd(map, ft_lstnew(new(point, j * 30 + 50, i * 30 + 50, (ft_atoi(line + z)) * 10), sizeof(t_point)));
 				while (ft_isdigit(line[z]))
 					z++;
 				j++;
@@ -68,3 +67,4 @@ void	***parce_map(t_list **map, char *name)
 	close(fd);
 	return (get_2d_array(*map, i, cols));
 }
+
