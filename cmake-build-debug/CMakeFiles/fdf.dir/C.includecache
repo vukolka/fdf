@@ -20,8 +20,6 @@ stddef.h
 stdarg.h
 -
 
-../classes_lib/string.h
-
 ../libft/includes/ft_printf.h
 stdarg.h
 -
@@ -54,15 +52,17 @@ unistd.h
 stdarg.h
 -
 
-/Users/mvukolov/Documents/fdf/fdf.h
+/home/vukolov/Documents/unit/fdf2/fdf.h
 stdarg.h
 -
 libft.h
 -
 mlx.h
--
+/home/vukolov/Documents/unit/fdf2/mlx.h
 
-/Users/mvukolov/Documents/fdf/src/draw.c
+/home/vukolov/Documents/unit/fdf2/mlx.h
+
+/home/vukolov/Documents/unit/fdf2/src/draw.c
 wchar.h
 -
 libft.h
@@ -76,25 +76,25 @@ MLXConn.h
 ft_printf.h
 -
 ../fdf.h
-/Users/mvukolov/Documents/fdf/fdf.h
+/home/vukolov/Documents/unit/fdf2/fdf.h
 
-/Users/mvukolov/Documents/fdf/src/key_events.c
+/home/vukolov/Documents/unit/fdf2/src/key_events.c
 stdlib.h
 -
 libft.h
 -
 MLXConn.h
 -
-mlx.h
--
+../mlx.h
+/home/vukolov/Documents/unit/fdf2/mlx.h
 ../fdf.h
-/Users/mvukolov/Documents/fdf/fdf.h
+/home/vukolov/Documents/unit/fdf2/fdf.h
 
-/Users/mvukolov/Documents/fdf/src/list_helpers.c
+/home/vukolov/Documents/unit/fdf2/src/list_helpers.c
 libft.h
 -
 
-/Users/mvukolov/Documents/fdf/src/main.c
+/home/vukolov/Documents/unit/fdf2/src/main.c
 Point.h
 -
 String.h
@@ -103,22 +103,22 @@ classes_lib.h
 -
 MLXConn.h
 -
-mlx.h
--
 fcntl.h
 -
 get_next_line.h
 -
 ft_printf.h
-/Users/mvukolov/Documents/fdf/src/ft_printf.h
+/home/vukolov/Documents/unit/fdf2/src/ft_printf.h
 new.h
-/Users/mvukolov/Documents/fdf/src/new.h
+/home/vukolov/Documents/unit/fdf2/src/new.h
 ../fdf.h
-/Users/mvukolov/Documents/fdf/fdf.h
+/home/vukolov/Documents/unit/fdf2/fdf.h
+../mlx.h
+/home/vukolov/Documents/unit/fdf2/mlx.h
 math.h
 -
 
-/Users/mvukolov/Documents/fdf/src/math.c
+/home/vukolov/Documents/unit/fdf2/src/math.c
 Point.h
 -
 stdlib.h
@@ -126,7 +126,7 @@ stdlib.h
 math.h
 -
 
-/Users/mvukolov/Documents/fdf/src/parsing.c
+/home/vukolov/Documents/unit/fdf2/src/parsing.c
 libft.h
 -
 fcntl.h

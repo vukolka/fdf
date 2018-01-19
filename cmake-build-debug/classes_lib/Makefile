@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mvukolov/Documents/fdf
+CMAKE_SOURCE_DIR = /home/vukolov/Documents/unit/fdf2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mvukolov/Documents/fdf/cmake-build-debug
+CMAKE_BINARY_DIR = /home/vukolov/Documents/unit/fdf2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/mvukolov/Documents/fdf/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles /Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/progress.marks
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles 0
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/vukolov/Documents/unit/fdf2/cmake-build-debug/CMakeFiles /home/vukolov/Documents/unit/fdf2/cmake-build-debug/classes_lib/CMakeFiles/progress.marks
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vukolov/Documents/unit/fdf2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/clean
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/preinstall
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/preinstall
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 classes_lib/CMakeFiles/classes_lib.dir/rule:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/CMakeFiles/classes_lib.dir/rule
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 classes_lib/CMakeFiles/classes_lib.dir/rule
 .PHONY : classes_lib/CMakeFiles/classes_lib.dir/rule
 
 # Convenience name for target.
@@ -122,8 +122,35 @@ classes_lib: classes_lib/CMakeFiles/classes_lib.dir/rule
 
 # fast build rule for target.
 classes_lib/fast:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/build
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/build
 .PHONY : classes_lib/fast
+
+Image.o: Image.c.o
+
+.PHONY : Image.o
+
+# target to build an object file
+Image.c.o:
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Image.c.o
+.PHONY : Image.c.o
+
+Image.i: Image.c.i
+
+.PHONY : Image.i
+
+# target to preprocess a source file
+Image.c.i:
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Image.c.i
+.PHONY : Image.c.i
+
+Image.s: Image.c.s
+
+.PHONY : Image.s
+
+# target to generate assembly for a file
+Image.c.s:
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Image.c.s
+.PHONY : Image.c.s
 
 MLXConn.o: MLXConn.c.o
 
@@ -131,7 +158,7 @@ MLXConn.o: MLXConn.c.o
 
 # target to build an object file
 MLXConn.c.o:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.o
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.o
 .PHONY : MLXConn.c.o
 
 MLXConn.i: MLXConn.c.i
@@ -140,7 +167,7 @@ MLXConn.i: MLXConn.c.i
 
 # target to preprocess a source file
 MLXConn.c.i:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.i
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.i
 .PHONY : MLXConn.c.i
 
 MLXConn.s: MLXConn.c.s
@@ -149,7 +176,7 @@ MLXConn.s: MLXConn.c.s
 
 # target to generate assembly for a file
 MLXConn.c.s:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.s
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.s
 .PHONY : MLXConn.c.s
 
 Point.o: Point.c.o
@@ -158,7 +185,7 @@ Point.o: Point.c.o
 
 # target to build an object file
 Point.c.o:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Point.c.o
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Point.c.o
 .PHONY : Point.c.o
 
 Point.i: Point.c.i
@@ -167,7 +194,7 @@ Point.i: Point.c.i
 
 # target to preprocess a source file
 Point.c.i:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Point.c.i
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Point.c.i
 .PHONY : Point.c.i
 
 Point.s: Point.c.s
@@ -176,7 +203,7 @@ Point.s: Point.c.s
 
 # target to generate assembly for a file
 Point.c.s:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Point.c.s
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Point.c.s
 .PHONY : Point.c.s
 
 String.o: String.c.o
@@ -185,7 +212,7 @@ String.o: String.c.o
 
 # target to build an object file
 String.c.o:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/String.c.o
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/String.c.o
 .PHONY : String.c.o
 
 String.i: String.c.i
@@ -194,7 +221,7 @@ String.i: String.c.i
 
 # target to preprocess a source file
 String.c.i:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/String.c.i
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/String.c.i
 .PHONY : String.c.i
 
 String.s: String.c.s
@@ -203,7 +230,7 @@ String.s: String.c.s
 
 # target to generate assembly for a file
 String.c.s:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/String.c.s
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/String.c.s
 .PHONY : String.c.s
 
 init_classes.o: init_classes.c.o
@@ -212,7 +239,7 @@ init_classes.o: init_classes.c.o
 
 # target to build an object file
 init_classes.c.o:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o
 .PHONY : init_classes.c.o
 
 init_classes.i: init_classes.c.i
@@ -221,7 +248,7 @@ init_classes.i: init_classes.c.i
 
 # target to preprocess a source file
 init_classes.c.i:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.i
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.i
 .PHONY : init_classes.c.i
 
 init_classes.s: init_classes.c.s
@@ -230,7 +257,7 @@ init_classes.s: init_classes.c.s
 
 # target to generate assembly for a file
 init_classes.c.s:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.s
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.s
 .PHONY : init_classes.c.s
 
 new.o: new.c.o
@@ -239,7 +266,7 @@ new.o: new.c.o
 
 # target to build an object file
 new.c.o:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/new.c.o
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/new.c.o
 .PHONY : new.c.o
 
 new.i: new.c.i
@@ -248,7 +275,7 @@ new.i: new.c.i
 
 # target to preprocess a source file
 new.c.i:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/new.c.i
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/new.c.i
 .PHONY : new.c.i
 
 new.s: new.c.s
@@ -257,7 +284,7 @@ new.s: new.c.s
 
 # target to generate assembly for a file
 new.c.s:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/new.c.s
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/new.c.s
 .PHONY : new.c.s
 
 # Help Target
@@ -269,6 +296,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... classes_lib"
+	@echo "... Image.o"
+	@echo "... Image.i"
+	@echo "... Image.s"
 	@echo "... MLXConn.o"
 	@echo "... MLXConn.i"
 	@echo "... MLXConn.s"
@@ -295,6 +325,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/vukolov/Documents/unit/fdf2/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

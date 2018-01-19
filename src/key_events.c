@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <libft.h>
 #include <MLXConn.h>
-#include <mlx.h>
+#include "../mlx.h"
 #include "../fdf.h"
 
 void	move_right(void **map)
