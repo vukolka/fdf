@@ -1,18 +1,21 @@
 #include "new.h"
 #include "Image.h"
 #include "../mlx.h"
+#include "MLXConn.h"
 
 static t_class	hidden_image;
-const void		*image;
+const void		*g_image;
 
 static void		*image_ctor(void *s_self, va_list *ap)
 {
 	t_image	*self;
+	t_mlx_class *mlx;
 
+	mlx = get_mlx(NULL);
 	self = s_self;
 	self->width = va_arg(*ap, int);
 	self->height = va_arg(*ap, int);
-	self->image_ptr = mlx_new_image(va_arg(*ap, void *),
+	self->image_ptr = mlx_new_image(mlx->conn,
 									self->width,
 									self->height);
 	self->endian = 0;
@@ -51,5 +54,5 @@ void			init_image()
 	hidden_image.clone = NULL;
 	hidden_image.differ = NULL;
 	hidden_image.size = sizeof(t_image);
-	image = &hidden_image;
+	g_image = &hidden_image;
 }

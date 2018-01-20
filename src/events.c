@@ -66,6 +66,6 @@ int		apply_transormation(void **s_map, int keycode)
 	static t_scene_state	scene_state;
 
 	apply_events(keycode, &scene_state);
-	loop(&scene_state, s_map, NULL);
+	loop(&scene_state, s_map);
 	return (1);
 }

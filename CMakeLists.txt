@@ -4,17 +4,11 @@ project(fdf C)
 set(CMAKE_C_STANDARD 99)
 
 set(SOURCE_FILES
-        src/main.c src/events.c fdf.h src/draw.c src/parsing.c src/math.c src/list_helpers.c src/test_main.c src/loop.c src/rendering.c)
+        src/main.c src/events.c fdf.h src/draw.c src/parsing.c src/math.c src/list_helpers.c src/test_main.c src/loop.c)
 
 include_directories(libft/includes)
 
-<<<<<<< HEAD
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -lmlx -framework OpenGL -framework AppKit")
-=======
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}")
->>>>>>> master
-
-find_package(libmlx.a)
 
 add_subdirectory(libft)
 
@@ -26,5 +20,5 @@ add_executable(fdf ${SOURCE_FILES})
 
 add_subdirectory(classes_lib)
 
-target_link_libraries(fdf classes_lib libft.a -L/home/vukolov/Documents/unit/fdf/libmlx -lmlx -lXext -lX11 -lm)
+target_link_libraries(fdf classes_lib libft.a -lm)
 

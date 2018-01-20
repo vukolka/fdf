@@ -21,7 +21,7 @@ t_list	*calculate_scene(t_scene_state *state, void **s_map)
 		while (map[i][j])
 		{
 			ft_lstadd(&scene, ft_lstnew(apply_rotation(map[i][j],
-			state->rot_x, state->rot_y, state->rot_z), sizeof(int) * 2);
+			state->rot_x, state->rot_y, state->rot_z), sizeof(int) * 2));
 			j++;
 		}
 		j = 0;

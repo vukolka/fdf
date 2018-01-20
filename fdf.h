@@ -16,7 +16,7 @@
 #include <libft.h>
 #include "mlx.h"
 
-<<<<<<< HEAD
+
 typedef struct	s_scene_map
 {
 	int			x;
@@ -35,26 +35,17 @@ typedef struct	s_scene_state
 	int 		height;
 }				t_scene_state;
 
-void render_scene(t_list *scene, void *mlx);
-t_list	*calculate_scene(t_scene_state *state, void **s_map);
-void loop(t_scene_state *state, void **s_map, void *mlx);
+void 	render_scene(t_list *scene);
+void 	loop(t_scene_state *state, void **s_map);
 void	apply_events(int keycode, t_scene_state *scene_state);
 int		apply_transormation(void **s_map, int keycode);
-void 	draw_line(void *s_mlx, void *v1, void *v2);
+void 	draw_line(void *image, void *v2, void *v1);
 void	**parce_map(t_list **map, char *name);
-void	for_each_lst(t_list *lst, void (*f)(void *, int , int , int), ...);
-=======
-void	put_point(void *s_vector, void *s_mlx);
+
 void ** parce_map(t_list **map, char *name);
->>>>>>> master
-void	modify_vector(void *s_vector, int x, int y, int z);
-void	move_right(void **map);
-void	close_win();
 void	apply_hooks(void **s_mlx, void **map);
-int		render_screen(unsigned int keycode, void *param);
-void	move_left(void **map);
-void	draw_poligons(void *mlx, void *s_map);
+void 	draw_poligons(void *s_map, void *image);
 int		*apply_rotation(void *s_vector, double rx, double ry, double rz);
-void	put_point(void *s_mlx, int x, int y, int color);
+void	put_point(int x, int y, int color, void *image);
 
 #endif

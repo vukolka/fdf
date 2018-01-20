@@ -5,17 +5,18 @@
 #include <math.h>
 #include <MLXConn.h>
 #include <ft_printf.h>
+#include <Image.h>
 #include "../fdf.h"
 
-void	put_point(void *s_mlx, int x, int y, int color)
+void put_point(int x, int y, int color, void *image)
 {
 	t_mlx_class *mlx;
 
-	mlx = s_mlx;
+	mlx = get_mlx(NULL);
 	mlx_pixel_put(mlx->conn, mlx->winx, x, y, color);
 }
 
-draw_line_high(void *mlx, int x0, int y0, int x1, int y1)
+void draw_line_high(int x0, int y0, int x1, int y1, void *image)
 {
 	int dx = x1 - x0;
 	int dy = y1 - y0;
@@ -34,7 +35,7 @@ draw_line_high(void *mlx, int x0, int y0, int x1, int y1)
 	i = x0;
 	while (y < y1)
 	{
-        put_point(mlx ,i, y, 0xffffff);
+		put_point(i, y, 0xffffff, image);
 		if (err > 0)
 		{
 			i += xi;
@@ -45,7 +46,7 @@ draw_line_high(void *mlx, int x0, int y0, int x1, int y1)
 	}
 }
 
-draw_line_low(void *s_mlx, int x0, int y0, int x1, int y1)
+void draw_line_low(int x0, int y0, int x1, int y1, void *image)
 {
 	int dx = x1 - x0;
 	int dy = y1 - y0;
@@ -64,7 +65,7 @@ draw_line_low(void *s_mlx, int x0, int y0, int x1, int y1)
 	i = x0;
 	while (i < x1)
 	{
-        put_point(s_mlx, i, y, 0xffffff);
+		put_point(i, y, 0xffffff, image);
 		if (err > 0)
 		{
 			y += yi;
@@ -75,7 +76,7 @@ draw_line_low(void *s_mlx, int x0, int y0, int x1, int y1)
 	}
 }
 
-void 	draw_line(void *s_mlx, void *v1, void *v2)
+void draw_line(void *image, void *v2, void *v1)
 {
 	int *xy0;
 	int *xy1;
@@ -85,20 +86,20 @@ void 	draw_line(void *s_mlx, void *v1, void *v2)
     if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
     {
         if (xy0[0] > xy1[0])
-            draw_line_low(s_mlx, xy1[0], xy1[1], xy0[0], xy0[1]);
+			draw_line_low(xy1[0], xy1[1], xy0[0], xy0[1], image);
         else
-            draw_line_low(s_mlx, xy0[0], xy0[1], xy1[0], xy1[1]);
+			draw_line_low(xy0[0], xy0[1], xy1[0], xy1[1], image);
     }
     else
     {
         if (xy0[1] > xy1[1])
-            draw_line_high(s_mlx, xy1[0], xy1[1], xy0[0], xy0[1]);
+			draw_line_high(xy1[0], xy1[1], xy0[0], xy0[1], image);
         else
-            draw_line_high(s_mlx, xy0[0], xy0[1], xy1[0], xy1[1]);
+			draw_line_high(xy0[0], xy0[1], xy1[0], xy1[1], image);
     }
 }
 
-void	draw_poligons(void *mlx, void *s_map)
+void draw_poligons(void *s_map, void *image)
 {
 	t_point			***map;
 	int				i;
@@ -111,7 +112,7 @@ void	draw_poligons(void *mlx, void *s_map)
 	{
 		while (map[i][j + 1])
 		{
-			draw_line(mlx, map[i][j], map[i][j + 1]);
+			draw_line(image, map[i][j + 1], map[i][j]);
 			j++;
 		}
 		j = 0;
@@ -123,7 +124,7 @@ void	draw_poligons(void *mlx, void *s_map)
 	{
 		while (map[i + 1])
 		{
-			draw_line(mlx, map[i][j], map[i + 1][j]);
+			draw_line(image, map[i + 1][j], map[i][j]);
 			i++;
 		}
 		i = 0;

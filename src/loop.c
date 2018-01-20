@@ -1,9 +1,11 @@
+#include <new.h>
+#include <Image.h>
 #include "../fdf.h"
 
-void loop(t_scene_state *state, void **s_map, void *mlx)
+void loop(t_scene_state *state, void **s_map)
 {
-	t_list	*scene;
+	void *img;
 
-	scene = calculate_scene(state, s_map);
-	render_scene(scene, mlx);
+	img = new(g_image, state->width, state->height);
+	draw_poligons(s_map, img);
 }
