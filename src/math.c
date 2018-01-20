@@ -5,31 +5,6 @@
 #include <new.h>
 #include "../fdf.h"
 
-t_list	*calculate_scene(t_scene_state *state, void **s_map)
-{
-	t_point ***map;
-	t_list *scene;
-	int i;
-	int j;
-
-	i = 0;
-	j = 0;
-	map = (t_point***)s_map;
-	scene = NULL;
-	while (map[i])
-	{
-		while (map[i][j])
-		{
-			ft_lstadd(&scene, ft_lstnew(apply_rotation(map[i][j],
-			state->rot_x, state->rot_y, state->rot_z), sizeof(int) * 2));
-			j++;
-		}
-		j = 0;
-		i++;
-	}
-	return (scene);
-};
-
 int		*apply_rotation(void *s_vector, double rx, double ry, double rz)
 {
 	t_point *vector;
@@ -51,4 +26,19 @@ int		*apply_rotation(void *s_vector, double rx, double ry, double rz)
 	res[0] = x;
 	res[1] = y;
 	return (res);
+}
+
+int 	*apply_state(void *s_vector, t_scene_state *state)
+{
+	t_point vector;
+	t_point *self;
+
+	self = (t_point *)s_vector;
+	vector.x = self->x + state->x;
+	vector.y = self->y + state->y;
+	vector.z = self->z;
+	vector.x *= state->scale;
+	vector.y *= state->scale;
+	vector.z *= state->scale / 4;
+	return (apply_rotation(&vector, state->rot_x, state->rot_y, 0));
 }

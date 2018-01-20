@@ -13,7 +13,7 @@ void put_point(int x, int y, int color, void *image)
 	t_mlx_class *mlx;
 
 	mlx = get_mlx(NULL);
-	mlx_pixel_put(mlx->conn, mlx->winx, x, y, color);
+	mlx_pixel_put(mlx->conn, mlx->winx, x + 500, y + 500, color);
 }
 
 void draw_line_high(int x0, int y0, int x1, int y1, void *image)
@@ -76,13 +76,13 @@ void draw_line_low(int x0, int y0, int x1, int y1, void *image)
 	}
 }
 
-void draw_line(void *image, void *v2, void *v1)
+void draw_line(t_scene_state *state, void *v2, void *v1, void *image)
 {
 	int *xy0;
 	int *xy1;
 
-	xy0 = apply_rotation(v1, -0.2, -0.3, -0.3);
-	xy1 = apply_rotation(v2, -0.2, -0.3, -0.3);
+	xy0 = apply_state(v1, state);
+	xy1 = apply_state(v2,state);
     if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
     {
         if (xy0[0] > xy1[0])
@@ -97,9 +97,11 @@ void draw_line(void *image, void *v2, void *v1)
         else
 			draw_line_high(xy0[0], xy0[1], xy1[0], xy1[1], image);
     }
+	free(xy0);
+	free(xy1);
 }
 
-void draw_poligons(void *s_map, void *image)
+void draw_poligons(void *s_map, void *image, t_scene_state *state)
 {
 	t_point			***map;
 	int				i;
@@ -112,7 +114,7 @@ void draw_poligons(void *s_map, void *image)
 	{
 		while (map[i][j + 1])
 		{
-			draw_line(image, map[i][j + 1], map[i][j]);
+			draw_line(state, map[i][j + 1], map[i][j], image);
 			j++;
 		}
 		j = 0;
@@ -124,7 +126,7 @@ void draw_poligons(void *s_map, void *image)
 	{
 		while (map[i + 1])
 		{
-			draw_line(image, map[i + 1][j], map[i][j]);
+			draw_line(state, map[i + 1][j], map[i][j], image);
 			i++;
 		}
 		i = 0;

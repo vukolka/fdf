@@ -23,6 +23,7 @@ CMakeFiles/fdf.dir/src/list_helpers.c.o: ../libft/includes/libft.h
 CMakeFiles/fdf.dir/src/list_helpers.c.o: ../src/list_helpers.c
 
 CMakeFiles/fdf.dir/src/loop.c.o: ../classes_lib/Image.h
+CMakeFiles/fdf.dir/src/loop.c.o: ../classes_lib/MLXConn.h
 CMakeFiles/fdf.dir/src/loop.c.o: ../classes_lib/new.h
 CMakeFiles/fdf.dir/src/loop.c.o: ../classes_lib/string.h
 CMakeFiles/fdf.dir/src/loop.c.o: ../libft/includes/libft.h

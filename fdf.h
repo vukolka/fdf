@@ -33,18 +33,18 @@ typedef struct	s_scene_state
 	int 		scale;
 	int 		width;
 	int 		height;
+	int			offset;
 }				t_scene_state;
 
-void 	render_scene(t_list *scene);
 void 	loop(t_scene_state *state, void **s_map);
 void	apply_events(int keycode, t_scene_state *scene_state);
-int		apply_transormation(void **s_map, int keycode);
-void 	draw_line(void *image, void *v2, void *v1);
+int		apply_transormation(int keycode, void *param);
+void	draw_line(t_scene_state *state, void *v2, void *v1, void *image);
 void	**parce_map(t_list **map, char *name);
-
+int 	*apply_state(void *vector, t_scene_state *state);
 void ** parce_map(t_list **map, char *name);
 void	apply_hooks(void **s_mlx, void **map);
-void 	draw_poligons(void *s_map, void *image);
+void	draw_poligons(void *s_map, void *image, t_scene_state *state);
 int		*apply_rotation(void *s_vector, double rx, double ry, double rz);
 void	put_point(int x, int y, int color, void *image);
 

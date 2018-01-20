@@ -50,7 +50,7 @@ void	**parce_map(t_list **map, char *name)
 		{
 			if (ft_isdigit(line[z]))
 			{
-				ft_lstadd(map, ft_lstnew(new(point, j * 30 + 50, i * 30 + 50, (ft_atoi(line + z)) * 10), sizeof(t_point)));
+				ft_lstadd(map, ft_lstnew(new(point, j, i, (ft_atoi(line + z))), sizeof(t_point)));
 				while (ft_isdigit(line[z]))
 					z++;
 				j++;

@@ -23,9 +23,9 @@ void apply_events(int keycode, t_scene_state *scene_state)
 	if (keycode == 124)
 		scene_state->x += 2;
 	if (keycode == 125)
-		scene_state->y -= 2;
+		scene_state->y += 2;
 	if (keycode == 126)
-		scene_state->x += 2;
+		scene_state->y -= 2;
 	if (keycode == 86)
 		scene_state->rot_y -= 0.1;
 	if (keycode == 88)
@@ -45,7 +45,7 @@ void apply_events(int keycode, t_scene_state *scene_state)
 		scene_state->rot_x = 0;
 		scene_state->rot_y = 0;
 		scene_state->rot_z = 0;
-		scene_state->scale = 0;
+		scene_state->scale = 1;
 	}
 }
 
@@ -61,11 +61,14 @@ void	apply_hooks(void **s_mlx, void **map)
 	mlx_key_hook(mlx->winx, apply_transormation, param);
 }
 
-int		apply_transormation(void **s_map, int keycode)
+int		apply_transormation(int keycode, void *param)
 {
 	static t_scene_state	scene_state;
+	void *map;
 
+	scene_state.offset = 50;
+	map = *(int ***)param;
 	apply_events(keycode, &scene_state);
-	loop(&scene_state, s_map);
+	loop(&scene_state, map);
 	return (1);
 }

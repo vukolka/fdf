@@ -24,6 +24,7 @@ CMakeFiles/fdf.dir/src/list_helpers.c.o
  /Users/mvukolov/Documents/fdf/src/list_helpers.c
 CMakeFiles/fdf.dir/src/loop.c.o
  ../classes_lib/Image.h
+ ../classes_lib/MLXConn.h
  ../classes_lib/new.h
  ../classes_lib/string.h
  ../libft/includes/libft.h
