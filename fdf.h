@@ -14,8 +14,9 @@
 
 #include <stdarg.h>
 #include <libft.h>
-#include <mlx.h>
+#include "mlx.h"
 
+<<<<<<< HEAD
 typedef struct	s_scene_map
 {
 	int			x;
@@ -42,6 +43,10 @@ int		apply_transormation(void **s_map, int keycode);
 void 	draw_line(void *s_mlx, void *v1, void *v2);
 void	**parce_map(t_list **map, char *name);
 void	for_each_lst(t_list *lst, void (*f)(void *, int , int , int), ...);
+=======
+void	put_point(void *s_vector, void *s_mlx);
+void ** parce_map(t_list **map, char *name);
+>>>>>>> master
 void	modify_vector(void *s_vector, int x, int y, int z);
 void	move_right(void **map);
 void	close_win();

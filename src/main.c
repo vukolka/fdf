@@ -2,12 +2,12 @@
 #include <String.h>
 #include <classes_lib.h>
 #include <MLXConn.h>
-#include <mlx.h>
 #include <fcntl.h>
 #include <get_next_line.h>
 #include "ft_printf.h"
 #include "new.h"
 #include "../fdf.h"
+#include "../mlx.h"
 #include <math.h>
 
 int		render_screen(unsigned int keycode, void *param)
