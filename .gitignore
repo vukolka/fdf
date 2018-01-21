@@ -1,3 +1,3 @@
-make-build-debug
-.idea
+make-build-debug/*
+.idea/*
 
