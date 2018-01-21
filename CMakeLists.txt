@@ -8,7 +8,7 @@ set(SOURCE_FILES
 
 include_directories(libft/includes)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -lmlx -framework OpenGL -framework AppKit")
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -lmlx -framework OpenGL -framework AppKit")
 
 add_subdirectory(libft)
 
@@ -20,5 +20,5 @@ add_executable(fdf ${SOURCE_FILES})
 
 add_subdirectory(classes_lib)
 
-target_link_libraries(fdf classes_lib libft.a -lm)
+target_link_libraries(fdf classes_lib libft.a -L/home/vukolov/Documents/unit/fdf/libmlx -lm -lmlx -lX11 -lXext )
 

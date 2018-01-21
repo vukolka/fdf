@@ -23,9 +23,9 @@ int     main(int argc, char **argv)
 
 	map = NULL;
 	map = (void *)parce_map(&map, argv[1]);
+	//TODO parcing should handle exceptions
 
 	apply_hooks(&mlx, map);
-
 	mlx_loop(((t_mlx_class*)mlx)->conn);
 	return (0);
 }

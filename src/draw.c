@@ -11,9 +11,24 @@
 void put_point(int x, int y, int color, void *image)
 {
 	t_mlx_class *mlx;
+	int			*img_data;
+	t_image		*img;
 
+	//TODO should not draw if x or y dont fit int the img
+
+	img = ((t_image*)image);
+	img_data = ((t_image*)image)->image_data;
+	img_data[(x + 500) + ((y + 400) * img->width)] = color;
+}
+
+void put_image(void *s_image, int x, int y)
+{
+	t_image		*img;
+	t_mlx_class	*mlx;
+
+	img = (t_image*)s_image;
 	mlx = get_mlx(NULL);
-	mlx_pixel_put(mlx->conn, mlx->winx, x + 500, y + 500, color);
+	mlx_put_image_to_window(mlx->conn, mlx->winx, img->image_ptr, x, y);
 }
 
 void draw_line_high(int x0, int y0, int x1, int y1, void *image)
@@ -83,14 +98,14 @@ void draw_line(t_scene_state *state, void *v2, void *v1, void *image)
 
 	xy0 = apply_state(v1, state);
 	xy1 = apply_state(v2,state);
-    if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
+	if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
     {
         if (xy0[0] > xy1[0])
 			draw_line_low(xy1[0], xy1[1], xy0[0], xy0[1], image);
         else
 			draw_line_low(xy0[0], xy0[1], xy1[0], xy1[1], image);
     }
-    else
+	else
     {
         if (xy0[1] > xy1[1])
 			draw_line_high(xy1[0], xy1[1], xy0[0], xy0[1], image);

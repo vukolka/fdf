@@ -7,6 +7,7 @@
 #include <MLXConn.h>
 #include <mlx.h>
 #include <Point.h>
+#include <ft_printf.h>
 #include "../fdf.h"
 
 void	close_win()
@@ -16,27 +17,27 @@ void	close_win()
 
 void apply_events(int keycode, t_scene_state *scene_state)
 {
-	if (keycode == 53)
+	if (keycode == 65307)
 		exit(0);
-	if (keycode == 123)
+	if (keycode == 65361)
 		scene_state->x -= 2;
-	if (keycode == 124)
+	if (keycode == 65363)
 		scene_state->x += 2;
-	if (keycode == 125)
+	if (keycode == 65364)
 		scene_state->y += 2;
-	if (keycode == 126)
+	if (keycode == 65362)
 		scene_state->y -= 2;
-	if (keycode == 86)
+	if (keycode == 65431)
 		scene_state->rot_y -= 0.1;
-	if (keycode == 88)
+	if (keycode == 65433)
 		scene_state->rot_y += 0.1;
-	if (keycode == 84)
+	if (keycode == 65430)
 		scene_state->rot_x -= 0.1;
-	if (keycode == 91)
+	if (keycode == 65432)
 		scene_state->rot_x += 0.1;
-	if (keycode == 69)
+	if (keycode == 65451)
 		scene_state->scale += 1;
-	if (keycode == 78)
+	if (keycode == 65453)
 		scene_state->scale -= 1;
 	if (keycode == 82)
 	{
@@ -66,7 +67,10 @@ int		apply_transormation(int keycode, void *param)
 	static t_scene_state	scene_state;
 	void *map;
 
+	ft_printf("%d\n", keycode);
 	scene_state.offset = 50;
+	scene_state.width = 1000;
+	scene_state.height = 1000;
 	map = *(int ***)param;
 	apply_events(keycode, &scene_state);
 	loop(&scene_state, map);

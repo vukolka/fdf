@@ -36,6 +36,7 @@ typedef struct	s_scene_state
 	int			offset;
 }				t_scene_state;
 
+void	put_image(void *s_image, int x, int y);
 void 	loop(t_scene_state *state, void **s_map);
 void	apply_events(int keycode, t_scene_state *scene_state);
 int		apply_transormation(int keycode, void *param);

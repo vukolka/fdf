@@ -1,3 +1,4 @@
+#include <ft_printf.h>
 #include "new.h"
 #include "Image.h"
 #include "../mlx.h"
@@ -20,7 +21,7 @@ static void		*image_ctor(void *s_self, va_list *ap)
 									self->height);
 	self->endian = 0;
 	self->size_line = 0;
-	self->bits = 4;
+	self->bits = 32;
 	self->image_data = (int *)mlx_get_data_addr(self->image_ptr,
 												&self->bits,
 												&self->size_line,
