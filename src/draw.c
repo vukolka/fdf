@@ -14,11 +14,15 @@ void put_point(int x, int y, int color, void *image)
 	int			*img_data;
 	t_image		*img;
 
-	//TODO should not draw if x or y dont fit int the img
-
 	img = ((t_image*)image);
+	x += img->width / 2;
+	y += img->height / 2;
+	if (x > img->width - 1 || y > img->height - 1)
+		return ;
+	if (x < 0 || y < 0)
+		return ;
 	img_data = ((t_image*)image)->image_data;
-	img_data[(x + 500) + ((y + 400) * img->width)] = color;
+	img_data[x + (y * img->width)] = color;
 }
 
 void put_image(void *s_image, int x, int y)

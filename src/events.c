@@ -67,7 +67,6 @@ int		apply_transormation(int keycode, void *param)
 	static t_scene_state	scene_state;
 	void *map;
 
-	ft_printf("%d\n", keycode);
 	scene_state.offset = 50;
 	scene_state.width = 1000;
 	scene_state.height = 1000;
