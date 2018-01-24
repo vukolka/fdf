@@ -52,6 +52,7 @@ CMakeFiles/fdf.dir/src/math.c.o: ../fdf.h
 CMakeFiles/fdf.dir/src/math.c.o: ../mlx.h
 CMakeFiles/fdf.dir/src/math.c.o: ../src/math.c
 
+CMakeFiles/fdf.dir/src/parsing.c.o: ../classes_lib/Linked_list.h
 CMakeFiles/fdf.dir/src/parsing.c.o: ../classes_lib/Point.h
 CMakeFiles/fdf.dir/src/parsing.c.o: ../classes_lib/new.h
 CMakeFiles/fdf.dir/src/parsing.c.o: ../libft/includes/ft_printf.h

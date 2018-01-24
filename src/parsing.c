@@ -4,66 +4,87 @@
 #include <new.h>
 #include <Point.h>
 #include <ft_printf.h>
+#include <Linked_list.h>
 
-void	**get_2d_array(t_list *map, int rows, int cols)
+int		skip_digit_und_spaces(char *line)
 {
-	t_point			***array;
-	int				i;
-	int				j;
+	int	i;
 
-	j = 0;
 	i = 0;
-	array = malloc((rows + 1) * sizeof(t_point ***));
-	while (i < rows)
-	{
-		array[i] = malloc(sizeof(t_point**) * (cols + 1));
-		while (j < cols)
-		{
-			array[i][j] = map->content;
-			j++;
-			map = map->next;
-		}
-		array[i][j] = NULL;
-		j = 0;
+	while (ft_isdigit(line[i]) && *line)
 		i++;
-	}
-	array[i] = NULL;
-	return ((void **)array);
+	while (ft_isspace(line[i]) && *line)
+		i++;
+	return (i);
 }
 
-void	**parce_map(t_list **map, char *name)
+static void *get_2d_map(void *list, int rows, int cols)
 {
-	int		fd;
+	t_point	***map;
+	int		y;
+	int 	x;
+
+	x = 0;
+	y = 0;
+	map = malloc(rows * sizeof(t_point**));
+	if (!map)
+		return (NULL);
+	while (x < rows)
+	{
+		map[x] = malloc((cols + 1) * sizeof(t_point*));
+		while (y < cols)
+		{
+			map[x][y] = ((t_llist*)list)->content;
+			list = ((t_llist*)list)->next;
+			y++;
+		}
+		map[x][y] = 0;
+		y = 0;
+		x++;
+	}
+	map[rows] = 0;
+	return ((void *)map);
+}
+
+static void	*get_map(int fd, int cols, int rows)
+{
+	char	*line;
 	int		i;
 	int		j;
-	char	*line;
 	int		z;
-	int 	cols;
+	void	*temp_map;
 
-	i = 0;
-	j = 0;
 	z = 0;
-	fd = open(name, O_RDONLY);
+	j = 0;
+	i = 0;
+	temp_map = NULL;
 	while (get_next_line(fd, &line))
 	{
-		while (line[z])
+		while (line[j])
 		{
-			if (ft_isdigit(line[z]))
-			{
-				while (ft_isdigit(line[z]))
-					z++;
-				j++;
-			}
-			else
-				z++;
+			llst_add(&temp_map, new(g_list,
+				new(point, i, z, ft_atoi(line + j))));
+			j += skip_digit_und_spaces(line + j);
+			z++;
 		}
-		cols = j;
+		cols = z;
 		z = 0;
 		j = 0;
 		i++;
-		free(line);
 	}
-	close(fd);
-	return (get_2d_array(*map, i, cols));
+	rows = i;
+	return (get_2d_map(temp_map, rows, cols));
 }
 
+void		*parce_map(char *name)
+{
+	int		fd;
+	void	*map;
+
+	fd = open(name, O_RDONLY);
+	if (fd < 0)
+		ft_printf("error\n");
+	map = get_map(fd, 0, 0);
+	//validate_map(map);
+	return (map);
+}

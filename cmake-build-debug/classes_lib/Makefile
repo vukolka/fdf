@@ -152,6 +152,33 @@ Image.c.s:
 	cd /home/vukolov/Documents/unit/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Image.c.s
 .PHONY : Image.c.s
 
+Linked_list.o: Linked_list.c.o
+
+.PHONY : Linked_list.o
+
+# target to build an object file
+Linked_list.c.o:
+	cd /home/vukolov/Documents/unit/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Linked_list.c.o
+.PHONY : Linked_list.c.o
+
+Linked_list.i: Linked_list.c.i
+
+.PHONY : Linked_list.i
+
+# target to preprocess a source file
+Linked_list.c.i:
+	cd /home/vukolov/Documents/unit/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Linked_list.c.i
+.PHONY : Linked_list.c.i
+
+Linked_list.s: Linked_list.c.s
+
+.PHONY : Linked_list.s
+
+# target to generate assembly for a file
+Linked_list.c.s:
+	cd /home/vukolov/Documents/unit/fdf/cmake-build-debug && $(MAKE) -f classes_lib/CMakeFiles/classes_lib.dir/build.make classes_lib/CMakeFiles/classes_lib.dir/Linked_list.c.s
+.PHONY : Linked_list.c.s
+
 MLXConn.o: MLXConn.c.o
 
 .PHONY : MLXConn.o
@@ -299,6 +326,9 @@ help:
 	@echo "... Image.o"
 	@echo "... Image.i"
 	@echo "... Image.s"
+	@echo "... Linked_list.o"
+	@echo "... Linked_list.i"
+	@echo "... Linked_list.s"
 	@echo "... MLXConn.o"
 	@echo "... MLXConn.i"
 	@echo "... MLXConn.s"

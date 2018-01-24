@@ -9,6 +9,10 @@ classes_lib/CMakeFiles/classes_lib.dir/Image.c.o: ../classes_lib/MLXConn.h
 classes_lib/CMakeFiles/classes_lib.dir/Image.c.o: ../classes_lib/new.h
 classes_lib/CMakeFiles/classes_lib.dir/Image.c.o: ../mlx.h
 
+classes_lib/CMakeFiles/classes_lib.dir/Linked_list.c.o: ../classes_lib/Linked_list.c
+classes_lib/CMakeFiles/classes_lib.dir/Linked_list.c.o: ../classes_lib/Linked_list.h
+classes_lib/CMakeFiles/classes_lib.dir/Linked_list.c.o: ../classes_lib/new.h
+
 classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.o: ../libft/includes/libft.h
 classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.o: ../classes_lib/MLXConn.c
 classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.o: ../classes_lib/MLXConn.h
@@ -25,6 +29,7 @@ classes_lib/CMakeFiles/classes_lib.dir/String.c.o: ../classes_lib/String.h
 classes_lib/CMakeFiles/classes_lib.dir/String.c.o: ../classes_lib/new.h
 
 classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o: ../classes_lib/Image.h
+classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o: ../classes_lib/Linked_list.h
 classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o: ../classes_lib/MLXConn.h
 classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o: ../classes_lib/Point.h
 classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o: ../classes_lib/String.h

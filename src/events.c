@@ -39,7 +39,7 @@ void apply_events(int keycode, t_scene_state *scene_state)
 		scene_state->scale += 1;
 	if (keycode == 65453)
 		scene_state->scale -= 1;
-	if (keycode == 82)
+	if (keycode == 65438)
 	{
 		scene_state->x = 0;
 		scene_state->y = 0;

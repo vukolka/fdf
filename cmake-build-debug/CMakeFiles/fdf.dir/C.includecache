@@ -8,6 +8,8 @@
 
 ../classes_lib/Image.h
 
+../classes_lib/Linked_list.h
+
 ../classes_lib/MLXConn.h
 
 ../classes_lib/Point.h
@@ -172,6 +174,8 @@ new.h
 Point.h
 -
 ft_printf.h
+-
+Linked_list.h
 -
 
 /home/vukolov/Documents/unit/fdf/src/test_main.c

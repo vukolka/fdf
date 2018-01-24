@@ -13,7 +13,7 @@
 
 int     main(int argc, char **argv)
 {
-	t_list	*map;
+	void	*map;
 	void	*mlx;
 
 	make_classes();
@@ -21,8 +21,7 @@ int     main(int argc, char **argv)
 	mlx = new(g_mlx_class, 1000, 1000, "fdf");
 	get_mlx(mlx);
 
-	map = NULL;
-	map = (void *)parce_map(&map, argv[1]);
+	map = parce_map(argv[1]);
 	//TODO parcing should handle exceptions
 
 	apply_hooks(&mlx, map);

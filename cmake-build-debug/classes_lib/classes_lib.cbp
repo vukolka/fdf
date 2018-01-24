@@ -72,6 +72,12 @@
 		<Unit filename="/home/vukolov/Documents/unit/fdf/classes_lib/Image.h">
 			<Option target="classes_lib"/>
 		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/classes_lib/Linked_list.c">
+			<Option target="classes_lib"/>
+		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/classes_lib/Linked_list.h">
+			<Option target="classes_lib"/>
+		</Unit>
 		<Unit filename="/home/vukolov/Documents/unit/fdf/classes_lib/MLXConn.c">
 			<Option target="classes_lib"/>
 		</Unit>
