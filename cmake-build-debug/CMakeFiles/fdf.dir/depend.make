@@ -18,6 +18,12 @@ CMakeFiles/fdf.dir/src/events.c.o: ../libmlx/mlx.h
 CMakeFiles/fdf.dir/src/events.c.o: ../fdf.h
 CMakeFiles/fdf.dir/src/events.c.o: ../src/events.c
 
+CMakeFiles/fdf.dir/src/ft_print_error.c.o: ../libft/includes/ft_printf.h
+CMakeFiles/fdf.dir/src/ft_print_error.c.o: ../libft/includes/libft.h
+CMakeFiles/fdf.dir/src/ft_print_error.c.o: ../fdf.h
+CMakeFiles/fdf.dir/src/ft_print_error.c.o: ../mlx.h
+CMakeFiles/fdf.dir/src/ft_print_error.c.o: ../src/ft_print_error.c
+
 CMakeFiles/fdf.dir/src/list_helpers.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/fdf.dir/src/list_helpers.c.o: ../libft/includes/libft.h
 CMakeFiles/fdf.dir/src/list_helpers.c.o: ../src/list_helpers.c
@@ -58,6 +64,8 @@ CMakeFiles/fdf.dir/src/parsing.c.o: ../classes_lib/new.h
 CMakeFiles/fdf.dir/src/parsing.c.o: ../libft/includes/ft_printf.h
 CMakeFiles/fdf.dir/src/parsing.c.o: ../libft/includes/get_next_line.h
 CMakeFiles/fdf.dir/src/parsing.c.o: ../libft/includes/libft.h
+CMakeFiles/fdf.dir/src/parsing.c.o: ../fdf.h
+CMakeFiles/fdf.dir/src/parsing.c.o: ../mlx.h
 CMakeFiles/fdf.dir/src/parsing.c.o: ../src/parsing.c
 
 CMakeFiles/fdf.dir/src/test_main.c.o: ../classes_lib/MLXConn.h
@@ -69,4 +77,12 @@ CMakeFiles/fdf.dir/src/test_main.c.o: ../libft/includes/libft.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../libmlx/mlx.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../fdf.h
 CMakeFiles/fdf.dir/src/test_main.c.o: ../src/test_main.c
+
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../classes_lib/Image.h
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../classes_lib/MLXConn.h
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../classes_lib/new.h
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../libft/includes/libft.h
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../fdf.h
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../mlx.h
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../src/user_interface.c
 

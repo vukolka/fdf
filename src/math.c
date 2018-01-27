@@ -5,6 +5,22 @@
 #include <new.h>
 #include "../fdf.h"
 
+void	get_rows_cols(void *s_map, t_scene_state *state)
+{
+	int		i;
+	t_point	***map;
+
+	map = (t_point***)s_map;
+	i = 0;
+	while (map[0][i])
+		i++;
+	state->y = -i / 2;
+	i = 0;
+	while (map[i])
+		i++;
+	state->x = -i / 2;
+}
+
 int		*apply_rotation(void *s_vector, double rx, double ry, double rz)
 {
 	t_point *vector;

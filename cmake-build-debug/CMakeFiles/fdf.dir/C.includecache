@@ -104,6 +104,12 @@ ft_printf.h
 ../fdf.h
 /home/vukolov/Documents/unit/fdf/fdf.h
 
+/home/vukolov/Documents/unit/fdf/src/ft_print_error.c
+ft_printf.h
+-
+../fdf.h
+/home/vukolov/Documents/unit/fdf/fdf.h
+
 /home/vukolov/Documents/unit/fdf/src/list_helpers.c
 libft.h
 -
@@ -177,6 +183,8 @@ ft_printf.h
 -
 Linked_list.h
 -
+../fdf.h
+/home/vukolov/Documents/unit/fdf/fdf.h
 
 /home/vukolov/Documents/unit/fdf/src/test_main.c
 new.h
@@ -190,6 +198,16 @@ Point.h
 classes_lib.h
 -
 ft_printf.h
+-
+../fdf.h
+/home/vukolov/Documents/unit/fdf/fdf.h
+
+/home/vukolov/Documents/unit/fdf/src/user_interface.c
+new.h
+-
+Image.h
+-
+MLXConn.h
 -
 ../fdf.h
 /home/vukolov/Documents/unit/fdf/fdf.h

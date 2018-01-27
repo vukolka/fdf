@@ -10,8 +10,9 @@
 # define SCALE_PLUS 125
 # define SCALE_MINUS 125
 # define CLOSE_WIN 125
-
-
+# define DIFF_LINES 1
+# define EMPTY_LINES 2
+# define NOT_A_NUMBER 3
 #include <stdarg.h>
 #include <libft.h>
 #include "mlx.h"
@@ -36,10 +37,13 @@ typedef struct	s_scene_state
 	int			offset;
 }				t_scene_state;
 
+void put_user_interface(t_scene_state *state);
+void	get_rows_cols(void *s_map, t_scene_state *state);
+void	ft_print_error(int error);
 void	*parce_map(char *name);
 void	put_image(void *s_image, int x, int y);
 void 	loop(t_scene_state *state, void **s_map);
-void	apply_events(int keycode, t_scene_state *scene_state);
+void apply_events(int keycode, t_scene_state *scene_state, void *map);
 int		apply_transormation(int keycode, void *param);
 void	draw_line(t_scene_state *state, void *v2, void *v1, void *image);
 int 	*apply_state(void *vector, t_scene_state *state);

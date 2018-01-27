@@ -5,6 +5,7 @@
 #include <Point.h>
 #include <ft_printf.h>
 #include <Linked_list.h>
+#include "../fdf.h"
 
 int		skip_digit_und_spaces(char *line)
 {
@@ -63,10 +64,13 @@ static void	*get_map(int fd, int cols, int rows)
 		while (line[j])
 		{
 			llst_add(&temp_map, new(g_list,
-				new(point, i, z, ft_atoi(line + j))));
+				new(point, z, i, ft_atoi(line + j))));
 			j += skip_digit_und_spaces(line + j);
 			z++;
 		}
+		if (i > 0)
+			if (cols != z)
+				ft_print_error(DIFF_LINES);
 		cols = z;
 		z = 0;
 		j = 0;
@@ -85,6 +89,5 @@ void		*parce_map(char *name)
 	if (fd < 0)
 		ft_printf("error\n");
 	map = get_map(fd, 0, 0);
-	//validate_map(map);
 	return (map);
 }

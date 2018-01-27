@@ -229,6 +229,33 @@ src/events.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/events.c.s
 .PHONY : src/events.c.s
 
+src/ft_print_error.o: src/ft_print_error.c.o
+
+.PHONY : src/ft_print_error.o
+
+# target to build an object file
+src/ft_print_error.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/ft_print_error.c.o
+.PHONY : src/ft_print_error.c.o
+
+src/ft_print_error.i: src/ft_print_error.c.i
+
+.PHONY : src/ft_print_error.i
+
+# target to preprocess a source file
+src/ft_print_error.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/ft_print_error.c.i
+.PHONY : src/ft_print_error.c.i
+
+src/ft_print_error.s: src/ft_print_error.c.s
+
+.PHONY : src/ft_print_error.s
+
+# target to generate assembly for a file
+src/ft_print_error.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/ft_print_error.c.s
+.PHONY : src/ft_print_error.c.s
+
 src/list_helpers.o: src/list_helpers.c.o
 
 .PHONY : src/list_helpers.o
@@ -391,6 +418,33 @@ src/test_main.c.s:
 	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/test_main.c.s
 .PHONY : src/test_main.c.s
 
+src/user_interface.o: src/user_interface.c.o
+
+.PHONY : src/user_interface.o
+
+# target to build an object file
+src/user_interface.c.o:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/user_interface.c.o
+.PHONY : src/user_interface.c.o
+
+src/user_interface.i: src/user_interface.c.i
+
+.PHONY : src/user_interface.i
+
+# target to preprocess a source file
+src/user_interface.c.i:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/user_interface.c.i
+.PHONY : src/user_interface.c.i
+
+src/user_interface.s: src/user_interface.c.s
+
+.PHONY : src/user_interface.s
+
+# target to generate assembly for a file
+src/user_interface.c.s:
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/user_interface.c.s
+.PHONY : src/user_interface.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -410,6 +464,9 @@ help:
 	@echo "... src/events.o"
 	@echo "... src/events.i"
 	@echo "... src/events.s"
+	@echo "... src/ft_print_error.o"
+	@echo "... src/ft_print_error.i"
+	@echo "... src/ft_print_error.s"
 	@echo "... src/list_helpers.o"
 	@echo "... src/list_helpers.i"
 	@echo "... src/list_helpers.s"
@@ -428,6 +485,9 @@ help:
 	@echo "... src/test_main.o"
 	@echo "... src/test_main.i"
 	@echo "... src/test_main.s"
+	@echo "... src/user_interface.o"
+	@echo "... src/user_interface.i"
+	@echo "... src/user_interface.s"
 .PHONY : help
 
 

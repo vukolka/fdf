@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/fdf.dir/src/list_helpers.c.o"
   "CMakeFiles/fdf.dir/src/test_main.c.o"
   "CMakeFiles/fdf.dir/src/loop.c.o"
+  "CMakeFiles/fdf.dir/src/ft_print_error.c.o"
+  "CMakeFiles/fdf.dir/src/user_interface.c.o"
   "fdf.pdb"
   "fdf"
 )

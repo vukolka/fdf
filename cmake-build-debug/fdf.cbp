@@ -574,6 +574,9 @@
 		<Unit filename="/home/vukolov/Documents/unit/fdf/src/events.c">
 			<Option target="fdf"/>
 		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/src/ft_print_error.c">
+			<Option target="fdf"/>
+		</Unit>
 		<Unit filename="/home/vukolov/Documents/unit/fdf/src/list_helpers.c">
 			<Option target="fdf"/>
 		</Unit>
@@ -590,6 +593,9 @@
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/home/vukolov/Documents/unit/fdf/src/test_main.c">
+			<Option target="fdf"/>
+		</Unit>
+		<Unit filename="/home/vukolov/Documents/unit/fdf/src/user_interface.c">
 			<Option target="fdf"/>
 		</Unit>
 		<Unit filename="/home/vukolov/Documents/unit/fdf/CMakeLists.txt">

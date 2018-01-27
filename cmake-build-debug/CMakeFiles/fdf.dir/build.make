@@ -249,6 +249,54 @@ CMakeFiles/fdf.dir/src/loop.c.o.provides: CMakeFiles/fdf.dir/src/loop.c.o.requir
 CMakeFiles/fdf.dir/src/loop.c.o.provides.build: CMakeFiles/fdf.dir/src/loop.c.o
 
 
+CMakeFiles/fdf.dir/src/ft_print_error.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/src/ft_print_error.c.o: ../src/ft_print_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fdf.dir/src/ft_print_error.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/ft_print_error.c.o   -c /home/vukolov/Documents/unit/fdf/src/ft_print_error.c
+
+CMakeFiles/fdf.dir/src/ft_print_error.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/ft_print_error.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/ft_print_error.c > CMakeFiles/fdf.dir/src/ft_print_error.c.i
+
+CMakeFiles/fdf.dir/src/ft_print_error.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/ft_print_error.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/ft_print_error.c -o CMakeFiles/fdf.dir/src/ft_print_error.c.s
+
+CMakeFiles/fdf.dir/src/ft_print_error.c.o.requires:
+
+.PHONY : CMakeFiles/fdf.dir/src/ft_print_error.c.o.requires
+
+CMakeFiles/fdf.dir/src/ft_print_error.c.o.provides: CMakeFiles/fdf.dir/src/ft_print_error.c.o.requires
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/ft_print_error.c.o.provides.build
+.PHONY : CMakeFiles/fdf.dir/src/ft_print_error.c.o.provides
+
+CMakeFiles/fdf.dir/src/ft_print_error.c.o.provides.build: CMakeFiles/fdf.dir/src/ft_print_error.c.o
+
+
+CMakeFiles/fdf.dir/src/user_interface.c.o: CMakeFiles/fdf.dir/flags.make
+CMakeFiles/fdf.dir/src/user_interface.c.o: ../src/user_interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fdf.dir/src/user_interface.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/user_interface.c.o   -c /home/vukolov/Documents/unit/fdf/src/user_interface.c
+
+CMakeFiles/fdf.dir/src/user_interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/user_interface.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/user_interface.c > CMakeFiles/fdf.dir/src/user_interface.c.i
+
+CMakeFiles/fdf.dir/src/user_interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/user_interface.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/user_interface.c -o CMakeFiles/fdf.dir/src/user_interface.c.s
+
+CMakeFiles/fdf.dir/src/user_interface.c.o.requires:
+
+.PHONY : CMakeFiles/fdf.dir/src/user_interface.c.o.requires
+
+CMakeFiles/fdf.dir/src/user_interface.c.o.provides: CMakeFiles/fdf.dir/src/user_interface.c.o.requires
+	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/user_interface.c.o.provides.build
+.PHONY : CMakeFiles/fdf.dir/src/user_interface.c.o.provides
+
+CMakeFiles/fdf.dir/src/user_interface.c.o.provides.build: CMakeFiles/fdf.dir/src/user_interface.c.o
+
+
 # Object files for target fdf
 fdf_OBJECTS = \
 "CMakeFiles/fdf.dir/src/main.c.o" \
@@ -258,7 +306,9 @@ fdf_OBJECTS = \
 "CMakeFiles/fdf.dir/src/math.c.o" \
 "CMakeFiles/fdf.dir/src/list_helpers.c.o" \
 "CMakeFiles/fdf.dir/src/test_main.c.o" \
-"CMakeFiles/fdf.dir/src/loop.c.o"
+"CMakeFiles/fdf.dir/src/loop.c.o" \
+"CMakeFiles/fdf.dir/src/ft_print_error.c.o" \
+"CMakeFiles/fdf.dir/src/user_interface.c.o"
 
 # External object files for target fdf
 fdf_EXTERNAL_OBJECTS =
@@ -271,13 +321,15 @@ fdf: CMakeFiles/fdf.dir/src/math.c.o
 fdf: CMakeFiles/fdf.dir/src/list_helpers.c.o
 fdf: CMakeFiles/fdf.dir/src/test_main.c.o
 fdf: CMakeFiles/fdf.dir/src/loop.c.o
+fdf: CMakeFiles/fdf.dir/src/ft_print_error.c.o
+fdf: CMakeFiles/fdf.dir/src/user_interface.c.o
 fdf: CMakeFiles/fdf.dir/build.make
 fdf: classes_lib/libclasses_lib.a
 fdf: libft/liblibft.a.a
 fdf: libft/ft_printf/libft_printf.a
 fdf: libft/ft_printf/libftprintf/liblibft.a
 fdf: CMakeFiles/fdf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable fdf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable fdf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -293,6 +345,8 @@ CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/math.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/list_helpers.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/test_main.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/loop.c.o.requires
+CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/ft_print_error.c.o.requires
+CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/user_interface.c.o.requires
 
 .PHONY : CMakeFiles/fdf.dir/requires
 

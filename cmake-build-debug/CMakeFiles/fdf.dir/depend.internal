@@ -18,6 +18,12 @@ CMakeFiles/fdf.dir/src/events.c.o
  ../libmlx/mlx.h
  /home/vukolov/Documents/unit/fdf/fdf.h
  /home/vukolov/Documents/unit/fdf/src/events.c
+CMakeFiles/fdf.dir/src/ft_print_error.c.o
+ ../libft/includes/ft_printf.h
+ ../libft/includes/libft.h
+ /home/vukolov/Documents/unit/fdf/fdf.h
+ /home/vukolov/Documents/unit/fdf/mlx.h
+ /home/vukolov/Documents/unit/fdf/src/ft_print_error.c
 CMakeFiles/fdf.dir/src/list_helpers.c.o
  ../libft/includes/ft_printf.h
  ../libft/includes/libft.h
@@ -59,6 +65,8 @@ CMakeFiles/fdf.dir/src/parsing.c.o
  ../libft/includes/ft_printf.h
  ../libft/includes/get_next_line.h
  ../libft/includes/libft.h
+ /home/vukolov/Documents/unit/fdf/fdf.h
+ /home/vukolov/Documents/unit/fdf/mlx.h
  /home/vukolov/Documents/unit/fdf/src/parsing.c
 CMakeFiles/fdf.dir/src/test_main.c.o
  ../classes_lib/MLXConn.h
@@ -70,3 +78,11 @@ CMakeFiles/fdf.dir/src/test_main.c.o
  ../libmlx/mlx.h
  /home/vukolov/Documents/unit/fdf/fdf.h
  /home/vukolov/Documents/unit/fdf/src/test_main.c
+CMakeFiles/fdf.dir/src/user_interface.c.o
+ ../classes_lib/Image.h
+ ../classes_lib/MLXConn.h
+ ../classes_lib/new.h
+ ../libft/includes/libft.h
+ /home/vukolov/Documents/unit/fdf/fdf.h
+ /home/vukolov/Documents/unit/fdf/mlx.h
+ /home/vukolov/Documents/unit/fdf/src/user_interface.c

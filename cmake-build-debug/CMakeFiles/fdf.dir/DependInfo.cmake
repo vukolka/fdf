@@ -6,12 +6,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/vukolov/Documents/unit/fdf/src/draw.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/draw.c.o"
   "/home/vukolov/Documents/unit/fdf/src/events.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/events.c.o"
+  "/home/vukolov/Documents/unit/fdf/src/ft_print_error.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/ft_print_error.c.o"
   "/home/vukolov/Documents/unit/fdf/src/list_helpers.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/list_helpers.c.o"
   "/home/vukolov/Documents/unit/fdf/src/loop.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/loop.c.o"
   "/home/vukolov/Documents/unit/fdf/src/main.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/main.c.o"
   "/home/vukolov/Documents/unit/fdf/src/math.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/math.c.o"
   "/home/vukolov/Documents/unit/fdf/src/parsing.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/parsing.c.o"
   "/home/vukolov/Documents/unit/fdf/src/test_main.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/test_main.c.o"
+  "/home/vukolov/Documents/unit/fdf/src/user_interface.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/src/user_interface.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

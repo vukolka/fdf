@@ -4,7 +4,7 @@ project(fdf C)
 set(CMAKE_C_STANDARD 99)
 
 set(SOURCE_FILES
-        src/main.c src/events.c fdf.h src/draw.c src/parsing.c src/math.c src/list_helpers.c src/test_main.c src/loop.c)
+        src/main.c src/events.c fdf.h src/draw.c src/parsing.c src/math.c src/list_helpers.c src/test_main.c src/loop.c src/ft_print_error.c src/user_interface.c)
 
 include_directories(libft/includes)
 
