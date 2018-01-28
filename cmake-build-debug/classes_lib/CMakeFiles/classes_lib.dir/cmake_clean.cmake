@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/classes_lib.dir/new.c.o"
-  "CMakeFiles/classes_lib.dir/Point.c.o"
-  "CMakeFiles/classes_lib.dir/String.c.o"
+  "CMakeFiles/classes_lib.dir/point.c.o"
+  "CMakeFiles/classes_lib.dir/string.c.o"
   "CMakeFiles/classes_lib.dir/init_classes.c.o"
-  "CMakeFiles/classes_lib.dir/MLXConn.c.o"
-  "CMakeFiles/classes_lib.dir/Image.c.o"
-  "CMakeFiles/classes_lib.dir/Linked_list.c.o"
+  "CMakeFiles/classes_lib.dir/mlxconn.c.o"
+  "CMakeFiles/classes_lib.dir/image.c.o"
+  "CMakeFiles/classes_lib.dir/linked_list.c.o"
   "libclasses_lib.pdb"
   "libclasses_lib.a"
 )

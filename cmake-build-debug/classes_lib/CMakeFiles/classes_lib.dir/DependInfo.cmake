@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/vukolov/Documents/unit/fdf/classes_lib/Image.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/Image.c.o"
-  "/home/vukolov/Documents/unit/fdf/classes_lib/Linked_list.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/Linked_list.c.o"
-  "/home/vukolov/Documents/unit/fdf/classes_lib/MLXConn.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/MLXConn.c.o"
-  "/home/vukolov/Documents/unit/fdf/classes_lib/Point.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/Point.c.o"
-  "/home/vukolov/Documents/unit/fdf/classes_lib/String.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/String.c.o"
-  "/home/vukolov/Documents/unit/fdf/classes_lib/init_classes.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o"
-  "/home/vukolov/Documents/unit/fdf/classes_lib/new.c" "/home/vukolov/Documents/unit/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/new.c.o"
+  "/Users/mvukolov/Documents/fdf/classes_lib/image.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/image.c.o"
+  "/Users/mvukolov/Documents/fdf/classes_lib/init_classes.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/init_classes.c.o"
+  "/Users/mvukolov/Documents/fdf/classes_lib/linked_list.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/linked_list.c.o"
+  "/Users/mvukolov/Documents/fdf/classes_lib/mlxconn.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/mlxconn.c.o"
+  "/Users/mvukolov/Documents/fdf/classes_lib/new.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/new.c.o"
+  "/Users/mvukolov/Documents/fdf/classes_lib/point.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/point.c.o"
+  "/Users/mvukolov/Documents/fdf/classes_lib/string.c" "/Users/mvukolov/Documents/fdf/cmake-build-debug/classes_lib/CMakeFiles/classes_lib.dir/string.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

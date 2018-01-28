@@ -36,8 +36,8 @@ typedef	struct			s_dict
 
 typedef struct			s_dictionary
 {
-	void 				*data;
-	char 				*key;
+	void				*data;
+	char				*key;
 }						t_dictionary;
 
 int						ft_wstrlen(wchar_t *str);

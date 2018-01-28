@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/vukolov/Downloads/clion-2017.3.1/bin/cmake/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vukolov/Documents/unit/fdf
+CMAKE_SOURCE_DIR = /Users/mvukolov/Documents/fdf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vukolov/Documents/unit/fdf/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mvukolov/Documents/fdf/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fdf.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/fdf.dir/flags.make
 
 CMakeFiles/fdf.dir/src/main.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fdf.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/main.c.o   -c /home/vukolov/Documents/unit/fdf/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fdf.dir/src/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/main.c.o   -c /Users/mvukolov/Documents/fdf/src/main.c
 
 CMakeFiles/fdf.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/main.c > CMakeFiles/fdf.dir/src/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/main.c > CMakeFiles/fdf.dir/src/main.c.i
 
 CMakeFiles/fdf.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/main.c -o CMakeFiles/fdf.dir/src/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/main.c -o CMakeFiles/fdf.dir/src/main.c.s
 
 CMakeFiles/fdf.dir/src/main.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/fdf.dir/src/main.c.o.provides.build: CMakeFiles/fdf.dir/src/main.c.o
 
 CMakeFiles/fdf.dir/src/events.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/events.c.o: ../src/events.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fdf.dir/src/events.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/events.c.o   -c /home/vukolov/Documents/unit/fdf/src/events.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fdf.dir/src/events.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/events.c.o   -c /Users/mvukolov/Documents/fdf/src/events.c
 
 CMakeFiles/fdf.dir/src/events.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/events.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/events.c > CMakeFiles/fdf.dir/src/events.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/events.c > CMakeFiles/fdf.dir/src/events.c.i
 
 CMakeFiles/fdf.dir/src/events.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/events.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/events.c -o CMakeFiles/fdf.dir/src/events.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/events.c -o CMakeFiles/fdf.dir/src/events.c.s
 
 CMakeFiles/fdf.dir/src/events.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/fdf.dir/src/events.c.o.provides.build: CMakeFiles/fdf.dir/src/events.
 
 CMakeFiles/fdf.dir/src/draw.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/draw.c.o: ../src/draw.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fdf.dir/src/draw.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/draw.c.o   -c /home/vukolov/Documents/unit/fdf/src/draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fdf.dir/src/draw.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/draw.c.o   -c /Users/mvukolov/Documents/fdf/src/draw.c
 
 CMakeFiles/fdf.dir/src/draw.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/draw.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/draw.c > CMakeFiles/fdf.dir/src/draw.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/draw.c > CMakeFiles/fdf.dir/src/draw.c.i
 
 CMakeFiles/fdf.dir/src/draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/draw.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/draw.c -o CMakeFiles/fdf.dir/src/draw.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/draw.c -o CMakeFiles/fdf.dir/src/draw.c.s
 
 CMakeFiles/fdf.dir/src/draw.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/fdf.dir/src/draw.c.o.provides.build: CMakeFiles/fdf.dir/src/draw.c.o
 
 CMakeFiles/fdf.dir/src/parsing.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/parsing.c.o: ../src/parsing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fdf.dir/src/parsing.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/parsing.c.o   -c /home/vukolov/Documents/unit/fdf/src/parsing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fdf.dir/src/parsing.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/parsing.c.o   -c /Users/mvukolov/Documents/fdf/src/parsing.c
 
 CMakeFiles/fdf.dir/src/parsing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/parsing.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/parsing.c > CMakeFiles/fdf.dir/src/parsing.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/parsing.c > CMakeFiles/fdf.dir/src/parsing.c.i
 
 CMakeFiles/fdf.dir/src/parsing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/parsing.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/parsing.c -o CMakeFiles/fdf.dir/src/parsing.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/parsing.c -o CMakeFiles/fdf.dir/src/parsing.c.s
 
 CMakeFiles/fdf.dir/src/parsing.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/fdf.dir/src/parsing.c.o.provides.build: CMakeFiles/fdf.dir/src/parsin
 
 CMakeFiles/fdf.dir/src/math.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/math.c.o: ../src/math.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fdf.dir/src/math.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/math.c.o   -c /home/vukolov/Documents/unit/fdf/src/math.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fdf.dir/src/math.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/math.c.o   -c /Users/mvukolov/Documents/fdf/src/math.c
 
 CMakeFiles/fdf.dir/src/math.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/math.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/math.c > CMakeFiles/fdf.dir/src/math.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/math.c > CMakeFiles/fdf.dir/src/math.c.i
 
 CMakeFiles/fdf.dir/src/math.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/math.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/math.c -o CMakeFiles/fdf.dir/src/math.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/math.c -o CMakeFiles/fdf.dir/src/math.c.s
 
 CMakeFiles/fdf.dir/src/math.c.o.requires:
 
@@ -177,66 +177,18 @@ CMakeFiles/fdf.dir/src/math.c.o.provides: CMakeFiles/fdf.dir/src/math.c.o.requir
 CMakeFiles/fdf.dir/src/math.c.o.provides.build: CMakeFiles/fdf.dir/src/math.c.o
 
 
-CMakeFiles/fdf.dir/src/list_helpers.c.o: CMakeFiles/fdf.dir/flags.make
-CMakeFiles/fdf.dir/src/list_helpers.c.o: ../src/list_helpers.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fdf.dir/src/list_helpers.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/list_helpers.c.o   -c /home/vukolov/Documents/unit/fdf/src/list_helpers.c
-
-CMakeFiles/fdf.dir/src/list_helpers.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/list_helpers.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/list_helpers.c > CMakeFiles/fdf.dir/src/list_helpers.c.i
-
-CMakeFiles/fdf.dir/src/list_helpers.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/list_helpers.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/list_helpers.c -o CMakeFiles/fdf.dir/src/list_helpers.c.s
-
-CMakeFiles/fdf.dir/src/list_helpers.c.o.requires:
-
-.PHONY : CMakeFiles/fdf.dir/src/list_helpers.c.o.requires
-
-CMakeFiles/fdf.dir/src/list_helpers.c.o.provides: CMakeFiles/fdf.dir/src/list_helpers.c.o.requires
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/list_helpers.c.o.provides.build
-.PHONY : CMakeFiles/fdf.dir/src/list_helpers.c.o.provides
-
-CMakeFiles/fdf.dir/src/list_helpers.c.o.provides.build: CMakeFiles/fdf.dir/src/list_helpers.c.o
-
-
-CMakeFiles/fdf.dir/src/test_main.c.o: CMakeFiles/fdf.dir/flags.make
-CMakeFiles/fdf.dir/src/test_main.c.o: ../src/test_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fdf.dir/src/test_main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/test_main.c.o   -c /home/vukolov/Documents/unit/fdf/src/test_main.c
-
-CMakeFiles/fdf.dir/src/test_main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/test_main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/test_main.c > CMakeFiles/fdf.dir/src/test_main.c.i
-
-CMakeFiles/fdf.dir/src/test_main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/test_main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/test_main.c -o CMakeFiles/fdf.dir/src/test_main.c.s
-
-CMakeFiles/fdf.dir/src/test_main.c.o.requires:
-
-.PHONY : CMakeFiles/fdf.dir/src/test_main.c.o.requires
-
-CMakeFiles/fdf.dir/src/test_main.c.o.provides: CMakeFiles/fdf.dir/src/test_main.c.o.requires
-	$(MAKE) -f CMakeFiles/fdf.dir/build.make CMakeFiles/fdf.dir/src/test_main.c.o.provides.build
-.PHONY : CMakeFiles/fdf.dir/src/test_main.c.o.provides
-
-CMakeFiles/fdf.dir/src/test_main.c.o.provides.build: CMakeFiles/fdf.dir/src/test_main.c.o
-
-
 CMakeFiles/fdf.dir/src/loop.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/loop.c.o: ../src/loop.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fdf.dir/src/loop.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/loop.c.o   -c /home/vukolov/Documents/unit/fdf/src/loop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fdf.dir/src/loop.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/loop.c.o   -c /Users/mvukolov/Documents/fdf/src/loop.c
 
 CMakeFiles/fdf.dir/src/loop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/loop.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/loop.c > CMakeFiles/fdf.dir/src/loop.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/loop.c > CMakeFiles/fdf.dir/src/loop.c.i
 
 CMakeFiles/fdf.dir/src/loop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/loop.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/loop.c -o CMakeFiles/fdf.dir/src/loop.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/loop.c -o CMakeFiles/fdf.dir/src/loop.c.s
 
 CMakeFiles/fdf.dir/src/loop.c.o.requires:
 
@@ -251,16 +203,16 @@ CMakeFiles/fdf.dir/src/loop.c.o.provides.build: CMakeFiles/fdf.dir/src/loop.c.o
 
 CMakeFiles/fdf.dir/src/ft_print_error.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/ft_print_error.c.o: ../src/ft_print_error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fdf.dir/src/ft_print_error.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/ft_print_error.c.o   -c /home/vukolov/Documents/unit/fdf/src/ft_print_error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fdf.dir/src/ft_print_error.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/ft_print_error.c.o   -c /Users/mvukolov/Documents/fdf/src/ft_print_error.c
 
 CMakeFiles/fdf.dir/src/ft_print_error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/ft_print_error.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/ft_print_error.c > CMakeFiles/fdf.dir/src/ft_print_error.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/ft_print_error.c > CMakeFiles/fdf.dir/src/ft_print_error.c.i
 
 CMakeFiles/fdf.dir/src/ft_print_error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/ft_print_error.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/ft_print_error.c -o CMakeFiles/fdf.dir/src/ft_print_error.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/ft_print_error.c -o CMakeFiles/fdf.dir/src/ft_print_error.c.s
 
 CMakeFiles/fdf.dir/src/ft_print_error.c.o.requires:
 
@@ -275,16 +227,16 @@ CMakeFiles/fdf.dir/src/ft_print_error.c.o.provides.build: CMakeFiles/fdf.dir/src
 
 CMakeFiles/fdf.dir/src/user_interface.c.o: CMakeFiles/fdf.dir/flags.make
 CMakeFiles/fdf.dir/src/user_interface.c.o: ../src/user_interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fdf.dir/src/user_interface.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/user_interface.c.o   -c /home/vukolov/Documents/unit/fdf/src/user_interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fdf.dir/src/user_interface.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fdf.dir/src/user_interface.c.o   -c /Users/mvukolov/Documents/fdf/src/user_interface.c
 
 CMakeFiles/fdf.dir/src/user_interface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fdf.dir/src/user_interface.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/vukolov/Documents/unit/fdf/src/user_interface.c > CMakeFiles/fdf.dir/src/user_interface.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mvukolov/Documents/fdf/src/user_interface.c > CMakeFiles/fdf.dir/src/user_interface.c.i
 
 CMakeFiles/fdf.dir/src/user_interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fdf.dir/src/user_interface.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/vukolov/Documents/unit/fdf/src/user_interface.c -o CMakeFiles/fdf.dir/src/user_interface.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mvukolov/Documents/fdf/src/user_interface.c -o CMakeFiles/fdf.dir/src/user_interface.c.s
 
 CMakeFiles/fdf.dir/src/user_interface.c.o.requires:
 
@@ -304,8 +256,6 @@ fdf_OBJECTS = \
 "CMakeFiles/fdf.dir/src/draw.c.o" \
 "CMakeFiles/fdf.dir/src/parsing.c.o" \
 "CMakeFiles/fdf.dir/src/math.c.o" \
-"CMakeFiles/fdf.dir/src/list_helpers.c.o" \
-"CMakeFiles/fdf.dir/src/test_main.c.o" \
 "CMakeFiles/fdf.dir/src/loop.c.o" \
 "CMakeFiles/fdf.dir/src/ft_print_error.c.o" \
 "CMakeFiles/fdf.dir/src/user_interface.c.o"
@@ -318,8 +268,6 @@ fdf: CMakeFiles/fdf.dir/src/events.c.o
 fdf: CMakeFiles/fdf.dir/src/draw.c.o
 fdf: CMakeFiles/fdf.dir/src/parsing.c.o
 fdf: CMakeFiles/fdf.dir/src/math.c.o
-fdf: CMakeFiles/fdf.dir/src/list_helpers.c.o
-fdf: CMakeFiles/fdf.dir/src/test_main.c.o
 fdf: CMakeFiles/fdf.dir/src/loop.c.o
 fdf: CMakeFiles/fdf.dir/src/ft_print_error.c.o
 fdf: CMakeFiles/fdf.dir/src/user_interface.c.o
@@ -329,7 +277,7 @@ fdf: libft/liblibft.a.a
 fdf: libft/ft_printf/libft_printf.a
 fdf: libft/ft_printf/libftprintf/liblibft.a
 fdf: CMakeFiles/fdf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable fdf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable fdf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fdf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -342,8 +290,6 @@ CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/events.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/draw.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/parsing.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/math.c.o.requires
-CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/list_helpers.c.o.requires
-CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/test_main.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/loop.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/ft_print_error.c.o.requires
 CMakeFiles/fdf.dir/requires: CMakeFiles/fdf.dir/src/user_interface.c.o.requires
@@ -355,6 +301,6 @@ CMakeFiles/fdf.dir/clean:
 .PHONY : CMakeFiles/fdf.dir/clean
 
 CMakeFiles/fdf.dir/depend:
-	cd /home/vukolov/Documents/unit/fdf/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vukolov/Documents/unit/fdf /home/vukolov/Documents/unit/fdf /home/vukolov/Documents/unit/fdf/cmake-build-debug /home/vukolov/Documents/unit/fdf/cmake-build-debug /home/vukolov/Documents/unit/fdf/cmake-build-debug/CMakeFiles/fdf.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/mvukolov/Documents/fdf/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mvukolov/Documents/fdf /Users/mvukolov/Documents/fdf /Users/mvukolov/Documents/fdf/cmake-build-debug /Users/mvukolov/Documents/fdf/cmake-build-debug /Users/mvukolov/Documents/fdf/cmake-build-debug/CMakeFiles/fdf.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fdf.dir/depend
 

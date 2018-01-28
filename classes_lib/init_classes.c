@@ -1,10 +1,22 @@
-#include "String.h"
-#include "Point.h"
-#include "MLXConn.h"
-#include "Image.h"
-#include "Linked_list.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init_classes.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvukolov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/01/28 12:52:08 by mvukolov          #+#    #+#             */
+/*   Updated: 2018/01/28 12:52:09 by mvukolov         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void 	make_classes()
+#include "string.h"
+#include "point.h"
+#include "mlxconn.h"
+#include "image.h"
+#include "linked_list.h"
+
+void	make_classes(void)
 {
 	llist_init();
 	string_init();

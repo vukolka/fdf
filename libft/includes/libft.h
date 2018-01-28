@@ -21,8 +21,8 @@
 
 typedef struct			s_dictionary
 {
-	void 				*data;
-	int 				key;
+	void				*data;
+	int					key;
 }						t_dictionary;
 
 typedef	struct			s_list

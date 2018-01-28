@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   new.c                                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvukolov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/01/28 12:56:23 by mvukolov          #+#    #+#             */
+/*   Updated: 2018/01/28 12:56:25 by mvukolov         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "new.h"
 
@@ -5,13 +17,13 @@ void	*new(const void *s_class, ...)
 {
 	const t_class	*class;
 	void			*p;
+	va_list			ap;
 
 	class = s_class;
 	p = malloc(class->size);
 	*(const t_class**)p = class;
 	if (class->ctor)
 	{
-		va_list ap;
 		va_start(ap, s_class);
 		p = class->ctor(p, &ap);
 		va_end(ap);

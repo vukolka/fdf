@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   classes_lib.h                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvukolov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/01/28 12:51:26 by mvukolov          #+#    #+#             */
+/*   Updated: 2018/01/28 12:51:27 by mvukolov         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FDF_CLASSES_LIB_H
-#define FDF_CLASSES_LIB_H
+# define FDF_CLASSES_LIB_H
 
-void 	make_classes();
+void	make_classes();
 
-#endif //FDF_CLASSES_LIB_H
+#endif

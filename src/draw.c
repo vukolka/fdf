@@ -1,14 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   draw.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvukolov <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/01/28 12:24:39 by mvukolov          #+#    #+#             */
+/*   Updated: 2018/01/28 12:24:40 by mvukolov         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <wchar.h>
 #include <libft.h>
-#include <Point.h>
+#include <point.h>
 #include <mlx.h>
 #include <math.h>
-#include <MLXConn.h>
+#include <mlxconn.h>
 #include <ft_printf.h>
-#include <Image.h>
+#include <image.h>
 #include "../fdf.h"
 
-void put_point(int x, int y, int color, void *image)
+void	put_point(int x, int y, int color, void *image)
 {
 	t_mlx_class *mlx;
 	int			*img_data;
@@ -25,102 +37,89 @@ void put_point(int x, int y, int color, void *image)
 	img_data[x + (y * img->width)] = color;
 }
 
-void put_image(void *s_image, int x, int y)
+void	draw_line_high(int *xy0, int *xy1, void *image)
 {
-	t_image		*img;
-	t_mlx_class	*mlx;
+	t_math_vars vars;
 
-	img = (t_image*)s_image;
-	mlx = get_mlx(NULL);
-	mlx_put_image_to_window(mlx->conn, mlx->winx, img->image_ptr, x, y);
-}
-
-void draw_line_high(int x0, int y0, int x1, int y1, void *image)
-{
-	int dx = x1 - x0;
-	int dy = y1 - y0;
-	int xi = 1;
-	int err;
-	int y;
-	int i;
-
-	if (dx < 0)
+	vars.dx = xy1[0] - xy0[0];
+	vars.dy = xy1[1] - xy0[1];
+	vars.ii = 1;
+	if (vars.dx < 0)
 	{
-		xi = -1;
-		dx = -dx;
+		vars.ii = -1;
+		vars.dx = -vars.dx;
 	}
-	err = 2 * dx - dy;
-	y = y0;
-	i = x0;
-	while (y < y1)
+	vars.err = 2 * vars.dx - vars.dy;
+	vars.y = xy0[1];
+	vars.i = xy0[0];
+	while (vars.y < xy1[1])
 	{
-		put_point(i, y, 0xffffff, image);
-		if (err > 0)
+		put_point(vars.i, vars.y, 0xffffff, image);
+		if (vars.err > 0)
 		{
-			i += xi;
-			err -= 2*dy;
+			vars.i += vars.ii;
+			vars.err -= 2 * vars.dy;
 		}
-		err = err + 2*dx;
-		y++;
+		vars.err = vars.err + 2 * vars.dx;
+		vars.y++;
 	}
 }
 
-void draw_line_low(int x0, int y0, int x1, int y1, void *image)
+void	draw_line_low(int *xy0, int *xy1, void *image)
 {
-	int dx = x1 - x0;
-	int dy = y1 - y0;
-	int yi = 1;
-	int err;
-	int y;
-	int i;
+	t_math_vars	vars;
 
-	if (dy < 0)
+	vars.dx = xy1[0] - xy0[0];
+	vars.dy = xy1[1] - xy0[1];
+	vars.ii = 1;
+	vars.err;
+	if (vars.dy < 0)
 	{
-		yi = -1;
-		dy = -dy;
+		vars.ii = -1;
+		vars.dy = -vars.dy;
 	}
-	err = 2 * dy - dx;
-	y = y0;
-	i = x0;
-	while (i < x1)
+	vars.err = 2 * vars.dy - vars.dx;
+	vars.y = xy0[1];
+	vars.i = xy0[0];
+	while (vars.i < xy1[0])
 	{
-		put_point(i, y, 0xffffff, image);
-		if (err > 0)
+		put_point(vars.i, vars.y, 0xffffff, image);
+		if (vars.err > 0)
 		{
-			y += yi;
-			err -= 2*dx;
+			vars.y += vars.ii;
+			vars.err -= 2 * vars.dx;
 		}
-		err = err + 2*dy;
-		i++;
+		vars.err = vars.err + 2 * vars.dy;
+		vars.i++;
 	}
 }
 
-void draw_line(t_scene_state *state, void *v2, void *v1, void *image)
+void	draw_line(t_scene_state *state, void *v2, void *v1, void *image)
 {
 	int *xy0;
 	int *xy1;
 
 	xy0 = apply_state(v1, state);
-	xy1 = apply_state(v2,state);
+	xy1 = apply_state(v2, state);
 	if (abs(xy1[1] - xy0[1]) < abs(xy1[0] - xy0[0]))
-    {
-        if (xy0[0] > xy1[0])
-			draw_line_low(xy1[0], xy1[1], xy0[0], xy0[1], image);
-        else
-			draw_line_low(xy0[0], xy0[1], xy1[0], xy1[1], image);
-    }
+	{
+		if (xy0[0] > xy1[0])
+			draw_line_low(xy1, xy0, image);
+		else
+			draw_line_low(xy0, xy1, image);
+	}
 	else
-    {
-        if (xy0[1] > xy1[1])
-			draw_line_high(xy1[0], xy1[1], xy0[0], xy0[1], image);
-        else
-			draw_line_high(xy0[0], xy0[1], xy1[0], xy1[1], image);
-    }
+	{
+		if (xy0[1] > xy1[1])
+			draw_line_high(xy1, xy0, image);
+		else
+			draw_line_high(xy0, xy1, image);
+	}
 	free(xy0);
 	free(xy1);
 }
 
-void draw_poligons(void *s_map, void *image, t_scene_state *state)
+void	draw_poligons(void *s_map, void *image, t_scene_state *state)
 {
 	t_point			***map;
 	int				i;
@@ -132,22 +131,15 @@ void draw_poligons(void *s_map, void *image, t_scene_state *state)
 	while (map[i])
 	{
 		while (map[i][j + 1])
-		{
-			draw_line(state, map[i][j + 1], map[i][j], image);
-			j++;
-		}
+			draw_line(state, map[i][j + 1], map[i][j++], image);
 		j = 0;
 		i++;
 	}
 	i = 0;
-	j = 0;
 	while (map[i][j])
 	{
 		while (map[i + 1])
-		{
-			draw_line(state, map[i + 1][j], map[i][j], image);
-			i++;
-		}
+			draw_line(state, map[i + 1][j], map[i++][j], image);
 		i = 0;
 		j++;
 	}
